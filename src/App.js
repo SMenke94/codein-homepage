@@ -1,20 +1,22 @@
 import React from 'react';
-// import './styles/index.css';
+// import './index.css';
 // import './App.css';
-import StartPage from './components/StartPage';
+import Hero from './components/Hero';
 import Values from './components/Values';
+import Mission from './components/Mission';
 import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Team from './components/Team';
-import References from './components/References';
-import Contact from './components/Contact';
+// import Portfolio from './components/Portfolio';
+// import Team from './components/Team';
+// import References from './components/References';
+// import Contact from './components/Contact';
 
 const App = () => {
   return (
     <div>
-      <StartPage />
-      {/* <Values /> */}
-      {/* <Services /> */}
+      <Hero />
+      <Mission />
+      <Values />
+      <Services />
       {/* <Portfolio /> */}
       {/* <Team /> */}
       {/* <References /> */}

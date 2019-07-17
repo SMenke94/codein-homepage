@@ -1,0 +1,349 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+/* general styling */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0px;
+}
+
+.container, .row, .container .row {
+  width: inherit;
+  margin: 0px auto;
+}
+
+div.row {
+  /* max-width: 1180px; */
+  max-width: 900px;
+  margin-bottom: 0px;
+}
+
+.row .col {
+  padding: 0px 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.peach {
+  background-color: $peach;
+}
+
+.pantone {
+  background-color: $pantone;
+}
+
+.darkBlue {
+  background-color: $darkBlue;
+}
+
+.darkGrey {
+  background-color: $darkGrey;
+}
+
+.turquoise {
+  background-color: $turquoise;
+}
+
+.lightGrey {
+  background-color: $lightGrey;
+}
+
+
+.hero-box, .mission-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* NavBar Component Styling */
+.navbar-wrapper {
+  height: 70px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all 1.6s;
+  z-index: 10;
+  transition: display 2s linear;
+  display: block;
+  opacity: 1;
+}
+
+.navbar-navbar-container {
+  background-color: $beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-navbar-wrapper {
+  width: 1180px;
+  margin: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  a {
+    color: $beige;
+  }
+  @media only screen and (max-width: $mobile) {
+    padding: 16px 24px 0 24px;
+  };
+}
+
+img.navbar-logo-style {
+  margin-top: 24px;
+  width: 50px;
+}
+
+.navbar-nav-link {
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 2px;
+  &:hover, &:focus {
+    margin-bottom: 0px;
+  }
+}
+
+.navbar-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $beige;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar-overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 32px 24px 0 32px;
+  color: $beige;
+  @media only screen and (max-width: $mobile) {
+    margin-left: 24px;
+  }
+}
+
+.navbar-close-btn {
+  width: 50px;
+  padding: 24px;
+}
+
+.navbar-nav-links-container-mobile {
+  // transition-duration: 2000ms;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 32px;
+  margin-right: 48px;
+  a.navbar-nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100px;
+    text-align: center;
+    padding: 32px 0;
+    color: $darkGrey;
+    &:active, &:hover {
+      border-bottom: none;
+    };
+  };
+}
+
+/* Hero Component Styling */
+.hero-wrapper {
+  background-color: $beige; /*lightgrey */
+}
+
+.hero-box {
+  height: calc(100vh - 70px);
+}
+
+.hero-headline {
+  color: $darkGrey;
+  font-size: 130px;
+  font-weight: bold;
+}
+
+.hero-sub-headline {
+  color: $darkGrey;
+  font-size: 47px;
+  margin: -35px 0px 0px;
+}
+
+.hero-slogan {
+  color: $textGrey;
+  font-size: 18px;
+}
+
+/* mission Component Styling */
+.mission-wrapper {
+  background-color: $lightBlack;
+}
+
+.mission-box {
+  height: 100vh;
+}
+
+.mission-text {
+  color: $white;
+  font-weight: 700;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+/* Values Component Styling */
+.values-wrapper {
+  background-color: $beige;
+  height: 100vh;
+}
+
+.values-headline {
+  color: $lightTextGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.values-sub-headline {
+  color: $textGrey;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: -16px;
+  text-align: center;
+}
+
+.values-boxes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.values-box {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 40px;
+  max-width: 200px;
+  height: 300px;
+  margin: 0 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  &:hover {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.values-box-icon img {
+  width: 60px;
+  height: 100%;
+}
+
+.values-box-headline {
+  color: $black;
+  margin: 40px 0 30px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.values-box-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $textGrey;
+}
+/* Services Component Styling */
+.services-wrapper {
+  height: 100vh;
+  // padding-bottom: 70px;
+}
+
+.services-headline {
+  color: $darkGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.services-sub-headline {
+  color: $darkGrey;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: -16px;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.services-boxes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.services-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  width: 15vw;
+  // min-height: 200px;
+  height: 15vh;
+  // max-height: 350px;
+  transition: all 0.5s ease;
+  &:hover {
+    // background-color: $darkGrey;
+    content: 'testing testin'
+  }
+}
+
+.services-box-headline {
+  color: $white;
+  font-size: 42px;
+  text-align: center;
+}
+
+// .services-box-text {
+//   transition: all 0.5s ease;
+//   font-size: 48px;
+//   margin-top: 48px;
+//   color: $orange;
+// }
+
+/* Portfolio Component Styling */
+/* Team Component Styling */
+/* References Component Styling */
+/* Contact Component Styling */
