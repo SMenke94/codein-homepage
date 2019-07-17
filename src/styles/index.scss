@@ -62,7 +62,6 @@ div.row {
   background-color: $lightGrey;
 }
 
-
 .hero-box, .mission-box {
   display: flex;
   align-items: flex-start;
@@ -286,7 +285,7 @@ img.navbar-logo-style {
 }
 /* Services Component Styling */
 .services-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   // padding-bottom: 70px;
 }
 
@@ -357,6 +356,199 @@ img.navbar-logo-style {
 }
 
 /* Portfolio Component Styling */
+.portfolio-wrapper {
+  background-color: $beige;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.portfolio-headline {
+  color: $lightTextGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.portfolio-filter {
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio-filter li {
+  cursor: pointer;
+  margin: 0px 15px 5px 0;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: $textGrey;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $pantone;
+  }
+}
+
+.portfolio-filter li .filter-active {
+  color: $pantone;
+}
+
+.portfolio-sub-headline {
+  color: $textGrey;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: -16px;
+  text-align: center;
+}
+
+.portfolio-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box {
+  flex: 1;
+  transition: all 0.5s ease;
+  border: $beige 5px solid;
+  position: relative;
+}
+
+.portfolio-box-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio-box-image img {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.portfolio-box-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.portfolio-box-overlay-content {
+  position: absolute;
+  left: 7%;
+  bottom: 4%;
+  transition: bottom 0.5s;
+}
+
+.portfolio-box-overlay-content p {
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.portfolio-box-overlay-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  text-align: center;
+  color: $black;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* Team Component Styling */
+.team-wrapper {
+  background-color: $backgroundBlack;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.team-header {
+  color: $black;
+  font-size: 141px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.team-description {
+  color: $white;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.team-box {
+  // background-color: $black;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.team-profile {
+  flex: 1;
+  margin: 30px 20px 30px 20px;
+  border: $white 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.team-profile-intro {
+  display: flex;
+  align-items: center;
+}
+
+.team-profile-intro img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team-profile-intro-content {
+  color: $white;
+  margin-left: 30px;
+}
+
+.team-profile-intro-content-mainheader {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.team-profile-intro-content-subheader {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 5px 0px;
+}
+
+.team-profile-details {
+  color: $white;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
 /* References Component Styling */
 /* Contact Component Styling */
