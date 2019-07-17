@@ -179,6 +179,7 @@ img.navbar-logo-style {
 /* Hero Component Styling */
 .hero-wrapper {
   background-color: $beige; /*lightgrey */
+  perspective: 40px;
 }
 
 .hero-box {
@@ -307,10 +308,14 @@ img.navbar-logo-style {
   letter-spacing: 0.8px;
 }
 
-.services-boxes {
+.services-boxes, .services-boxes-wrapper {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  // justify-content: center;
+  align-items: center;
+}
+
+.services-boxes-wrapper {
+  flex-direction: column;
 }
 
 .services-box {
@@ -323,25 +328,33 @@ img.navbar-logo-style {
   // min-height: 200px;
   height: 15vh;
   // max-height: 350px;
-  transition: all 0.5s ease;
-  &:hover {
-    // background-color: $darkGrey;
-    content: 'testing testin'
-  }
 }
 
 .services-box-headline {
-  color: $white;
-  font-size: 42px;
-  text-align: center;
+  // color: $white;
+  // font-size: 42px;
+  // text-align: center;
 }
 
-// .services-box-text {
-//   transition: all 0.5s ease;
-//   font-size: 48px;
-//   margin-top: 48px;
-//   color: $orange;
-// }
+.services-box .services-box-details  {
+	width: 70%;
+	height: 80%;	
+	padding: 5% 8%;
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+	background: rgb(255,255,255);	
+	opacity: 0;
+	transition: all 0.4s ease-in;
+}
+
+.services-box:hover .services-box-details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+	opacity: 1;
+}
 
 /* Portfolio Component Styling */
 /* Team Component Styling */
