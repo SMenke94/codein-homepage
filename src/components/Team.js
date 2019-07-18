@@ -1,17 +1,20 @@
 import React from 'react';
+import '../styles/team.scss';
 import sebastian from '../assets/images/team/team-sebastian.png';
-import saskia from '../assets/images/team/team-saskia.png';
+import saskia from '../assets/images/team/team-saskia4.png';
 import katrin from '../assets/images/team/team-katrin-1.png';
 import robin from '../assets/images/team/team-robin.png';
 import jakob from '../assets/images/team/team-jakob.png';
 import marcus from '../assets/images/team/team-marcus-2.png';
 import max from '../assets/images/team/team-max.png';
 import eddie from '../assets/images/team/team-eddie.png';
-
+import ruby from '../assets/images/stack/ruby.png';
+import rails from '../assets/images/stack/rails.png';
 
 const Team = () => {
   return (
     <div className="team-wrapper">
+      <div className="row">
       <div className="team-header">Team</div>
       {/* <div className="team-description">
         We all come from different professional backgrounds. Each bringing a unique set of skills to the team. 
@@ -22,110 +25,247 @@ const Team = () => {
       </div> */}
       <div className="team-box">
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={sebastian} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Sebastian Schlaak</div>
-              <div className="team-profile-intro-content-subheader">CEO</div>
-              <div className="team-profile-details">
-                MSc Informatics | MA Management | Stanford Executive Education Graduate | Startup Founder | Kaltduscher
+        <div className="team-card">
+          <img src={sebastian} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Sebastian Schlaak</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">MSc Informatics</div>
+              <div className="team-card-additional-info-title">MA Management</div>
+              <div className="team-card-additional-info-title">Stanford Leadership</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={robin} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Robin Zuschke</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc International Business | AWS Solutions Architect | Drummer
+        <div className="team-card">
+          <img src={robin} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Robin Zuschke</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc International Business</div>
+              <div className="team-card-additional-info-title">Le Wagon Graduate</div>
+              <div className="team-card-additional-info-title">AWS Solutions Architect</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={saskia} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Saskia Menke</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc International Business | MSc Business & Development Studies | Data Enthusiast | Cheerleader
+        <div className="team-card">
+          <img src={saskia} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Saskia Menke</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc International Business</div>
+              <div className="team-card-additional-info-title">MSc Development Studies</div>
+              <div className="team-card-additional-info-title">Le Wagon Graduate</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={katrin} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Katrin Abel</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BA Economics/Marketing | MA Communication Sciences | Google Analytics Pro | Half Marathon Finisher
+        <div className="team-card">
+          <img src={katrin} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Katrin Abel</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BA Marketing</div>
+              <div className="team-card-additional-info-title">MA Communication Studies</div>
+              <div className="team-card-additional-info-title">Ironhack Graduate</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={jakob} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Jakob Bethmann</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc International Business | AWS Solutions Architect | Food Fanatic
+        <div className="team-card">
+          <img src={jakob} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Jakob Bethmann</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc International Business</div>
+              <div className="team-card-additional-info-title">Le Wagon Graduate</div>
+              <div className="team-card-additional-info-title">AWS Solutions Architect</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={marcus} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Marcus Zierke</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc/MSc Engineering | Mobile App Expert | Dog Lover
+        <div className="team-card">
+          <img src={marcus} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Marcus Zierke</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc Engineering</div>
+              <div className="team-card-additional-info-title">MSc Engineering</div>
+              <div className="team-card-additional-info-title">Le Wagon Graduate</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={max} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Max Brückner</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc Economics | MSc Entrepreneurship | Ruby/Rails Expert | Rapper
+        <div className="team-card">
+          <img src={max} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Max Brückner</div>
+            <div className="team-card-title">Ruby Poet</div>
+            <div className="team-card-general-bio">
+              Hired a Ruby on Rails magician once. Started coding and now master the sorcery myself.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc Business</div>
+              <div className="team-card-additional-info-title">MSc Entrepreneurship</div>
+              <div className="team-card-additional-info-title">Le Wagon Graduate</div>
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="team-profile">
-          <div className="team-profile-intro">
-            <img src={eddie} alt="" />
-            <div className="team-profile-intro-content">
-              <div className="team-profile-intro-content-mainheader">Eddie Muss</div>
-              <div className="team-profile-intro-content-subheader">Fullstack Developer</div>
-              <div className="team-profile-details">
-                BSc Computer Science | All Things Machine Learning | Salsa Dancer
+        <div className="team-card">
+          <img src={eddie} alt="" />
+          <div className="team-card-general">
+            <div className="team-card-name">Eddie Muss</div>
+            <div className="team-card-title">Python Ninja</div>
+            <div className="team-card-general-bio">
+              Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.
+          </div>
+          </div>
+          <div className="team-card-additional">
+            <div className="team-card-additional-info">
+              <div className="team-card-additional-info-title">BSc Computer Sciences</div>
+              {/* <div className="team-card-additional-info-title">BSc Computer Sciences</div> */}
+              {/* <div className="team-card-additional-info-title">BSc Computer Sciences</div> */}
+              <div className="team-card-additional-info-stack">
+                <i className="fab fa-html5"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-sass"></i>
+                <i className="fab fa-js"></i>
+                <i className="fab fa-react"></i>
+                <img src={ruby} alt="" />
+                <img src={rails} alt="" />
+                <i className="fab fa-node-js"></i>
+                <i className="fas fa-database"></i>
+                <i className="fab fa-aws"></i>
               </div>
             </div>
           </div>
         </div>
-    
+
+      </div>
       </div>
     </div>
   );

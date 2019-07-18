@@ -1,0 +1,117 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+/* Portfolio Component Styling */
+.portfolio-wrapper {
+  background-color: $beige;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.portfolio-headline {
+  color: $lightTextGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.portfolio-filter {
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio-filter li {
+  cursor: pointer;
+  margin: 0px 15px 5px 0;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: $textGrey;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $pantone;
+  }
+}
+
+.portfolio-filter li .filter-active {
+  color: $pantone;
+}
+
+.portfolio-sub-headline {
+  color: $textGrey;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: -16px;
+  text-align: center;
+}
+
+.portfolio-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box {
+  flex: 1;
+  transition: all 0.5s ease;
+  border: $beige 5px solid;
+  position: relative;
+}
+
+.portfolio-box-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio-box-image img {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.portfolio-box-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.portfolio-box-overlay-content {
+  position: absolute;
+  left: 7%;
+  bottom: 4%;
+  transition: bottom 0.5s;
+}
+
+.portfolio-box-overlay-content p {
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.portfolio-box-overlay-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  text-align: center;
+  color: $black;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
