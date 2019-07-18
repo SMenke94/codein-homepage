@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../../styles/NavBar.scss';
 import menu from "../../assets/images/menu.png";
 import cross from "../../assets/images/cross.png";
 
@@ -47,9 +48,7 @@ export default class NavBar extends Component {
           style={{ backgroundColor: this.props.background }}
         >
           <div className="navbar-navbar-wrapper">
-            <a href="/">
-              code&#183;in
-            </a>
+            <a href="/" />
             <div className="navbar-menu-container">
               <div className="navbar-nav-link" onClick={this.openNav}>
                 <img
@@ -64,15 +63,10 @@ export default class NavBar extends Component {
                 style={this.state.style}
               >
                 <div className="navbar-sidenav-container">
-                  <div className="navbar-overlay-header">
-                    <div onClick={this.closeNav}>
-                      {/* <img
-                        src={logo}
-                        alt="logo"
-                        className="navbar-logo-style"
-                      /> */}
-                      code&#183;in
-                    </div>
+                  <div
+                    href="/"
+                    className="navbar-nav-links-container-mobile"
+                  >
                     <div onClick={this.closeNav}>
                       <img
                         src={cross}
@@ -80,11 +74,6 @@ export default class NavBar extends Component {
                         className="navbar-close-btn"
                       />
                     </div>
-                  </div>
-                  <div
-                    href="/"
-                    className="navbar-nav-links-container-mobile"
-                  >
                     <a
                       href="#mission"
                       className="navbar-nav-link"
