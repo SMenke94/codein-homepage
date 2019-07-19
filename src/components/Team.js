@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Team.scss';
+import '../styles/team.scss';
 import sebastian from '../assets/images/team/team-sebastian.png';
 import saskia from '../assets/images/team/team-saskia4.png';
 import katrin from '../assets/images/team/team-katrin-1.png';

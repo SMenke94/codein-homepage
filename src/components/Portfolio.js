@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Portfolio.scss';
+import '../styles/portfolio.scss';
 import archipinion_webapp from '../assets/images/portfolio/archipinion_webapp.png';
 import archipinion_ios from '../assets/images/portfolio/archipinion_ios.png';
 import landingpages from '../assets/images/portfolio/landingpages.png';
