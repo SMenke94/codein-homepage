@@ -78,7 +78,7 @@
   justify-content: center;
   align-content: center;
   @media only screen and (max-width: $tabletBig) {
-    width: unset;
+    width: 100%;
     border: unset;
   }
 }
@@ -86,6 +86,9 @@
 .portfolio-box-image img {
   width: 100%;
   padding: 10px;
+  @media only screen and (max-width: $tabletBig) {
+    height: 100%;
+  }
 }
 
 .portfolio-box-overlay {
