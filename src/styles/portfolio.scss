@@ -14,7 +14,10 @@
   font-weight: 700;
   text-align: center;
   padding-top: 50px;
-  margin-bottom: 20px;
+  @media only screen and (max-width: $mobile) {
+    padding: 24px 0;
+    font-size: 48px;
+  }
 }
 
 // .portfolio-filter {
@@ -52,25 +55,40 @@
 .portfolio-boxes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-box {
-  flex: 1;
+  // flex: 1;
+  max-width: 45vw;
   transition: all 0.5s ease;
   border: $beige 5px solid;
   position: relative;
+  padding: 20px;
+  @media only screen and (max-width: $tabletBig) {
+    max-width: unset;
+    border: unset;
+  }
 }
 
 .portfolio-box-image {
-  height: 100%;
+  // height: 100%;
+  width: 45vw;
   display: flex;
   justify-content: center;
   align-content: center;
+  @media only screen and (max-width: $tabletBig) {
+    width: 100%;
+    border: unset;
+  }
 }
 
 .portfolio-box-image img {
-  max-width: 500px;
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
+  @media only screen and (max-width: $tabletBig) {
+    height: 100%;
+  }
 }
 
 .portfolio-box-overlay {

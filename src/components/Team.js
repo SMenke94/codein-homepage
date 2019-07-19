@@ -17,7 +17,7 @@ import salesforce from '../assets/images/stack/salesforce.svg';
 const Team = () => {
   return (
     <div className="team-wrapper" id="team">
-      <div className="row">
+      <div className="row" id="team-row">
         <div className="team-header">Team</div>
         {/* <div className="team-description">
           We all come from different professional backgrounds. Each bringing a unique set of skills to the team. 

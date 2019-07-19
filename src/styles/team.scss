@@ -11,12 +11,22 @@
   flex-direction: column;
 }
 
+.row#team-row {
+  @media only screen and (max-width: $tabletBig) {
+    padding: 0;
+  }
+}
+
 .team-header {
   color: $black;
-  font-size: 141px;
-  font-weight: 900;
+  font-size: 96px;
+  font-weight: 700;
   text-align: center;
   padding-top: 50px;
+  @media only screen and (max-width: $mobile) {
+    padding-top: 24px;
+    font-size: 48px;
+  }
 }
 
 .team-description {
@@ -29,10 +39,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-card {
-  width: 410px;
+  max-width: 410px;
   height: 180px;
   background-color: rgba(35,35,35,1);
   box-shadow: 10px 10px 0px rgba(10,10,10,0.35);
@@ -43,7 +54,7 @@
 }
 
 .team-card img {
-  width: 180px;
+  max-width: 180px;
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
   z-index: 4;
   position: absolute;
@@ -53,12 +64,19 @@
   padding: 1rem;
   color: $lightGrey;
   margin-left: 170px;
+  @media only screen and (max-width: $mobile) {
+    padding: -10px 5px -10px 10px;
+  }
 }
 
 .team-card-name {
   font-size: 24px;
   margin: 5px 0px;
   font-weight: bold;
+  @media only screen and (max-width: $mobile) {
+    font-size: 16px;
+    margin: 0;
+  }
 }
 
 .team-card-title {
@@ -71,13 +89,16 @@
 .team-card-general-bio {
   font-size: 14px;
   margin-top: 15px;
-  // font-style: italic;
+  @media only screen and (max-width: $mobile) {
+    margin-top: 5px;
+    font-size: 12px;
+  }
 }
 
 .team-card-additional {
   position: absolute;
-  width: 135px;
-  height: 179px;
+  max-width: 135px;
+  // height: 179px;
   background: $pantone;
   transition: width 0.6s;
   overflow: hidden;
