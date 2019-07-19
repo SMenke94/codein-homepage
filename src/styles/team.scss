@@ -1,0 +1,126 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+/* Team Component Styling */
+.team-wrapper {
+  background-color: $lightBlack;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.team-header {
+  color: $black;
+  font-size: 141px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.team-description {
+  color: $lightGrey;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  width: 410px;
+  height: 180px;
+  background-color: rgba(35,35,35,1);
+  box-shadow: 10px 10px 0px rgba(10,10,10,0.35);
+  position: relative;
+  margin: 30px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.team-card img {
+  width: 180px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+  z-index: 4;
+  position: absolute;
+}
+
+.team-card-general {
+  padding: 1rem;
+  color: $lightGrey;
+  margin-left: 170px;
+}
+
+.team-card-name {
+  font-size: 24px;
+  margin: 5px 0px;
+  font-weight: bold;
+}
+
+.team-card-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 5px 0px;
+}
+
+.team-card-general-bio {
+  font-size: 14px;
+  margin-top: 15px;
+  // font-style: italic;
+}
+
+.team-card-additional {
+  position: absolute;
+  width: 135px;
+  height: 179px;
+  background: $pantone;
+  transition: width 0.6s;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.team-card:hover .team-card-additional {
+  width: 100%;
+}
+
+.team-card-additional-info {
+  width: 200px;
+  position: absolute;
+  left: 170px;
+  padding: 1rem;
+  color: $white;
+}
+
+.team-card-additional-info-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 2px 0px;
+}
+
+.team-card-additional-info-stack {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  width: 180px;
+}
+
+.team-card-additional-info-stack i {
+  font-size: 18px;
+  margin: 5px 15px 5px 0px;
+}
+
+.team-card-additional-info-stack img {
+  z-index: 2;
+  width: 18px;
+  margin-right: 15px;
+  position: relative;
+}

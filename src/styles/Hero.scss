@@ -1,0 +1,51 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.hero-wrapper {
+  background-color: $beige;
+  perspective: 40px;
+  height: calc(100vh - 70px);
+  @media only screen and (max-width: $mobile) {
+    height: calc(100vh - 140px);
+  }
+}
+
+.hero-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 300px;
+}
+
+.hero-text-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-headline {
+  color: $darkGrey;
+  font-size: 130px;
+  font-weight: bold;
+  @media only screen and (max-width: $mobile) {
+    font-size: 72px;
+  }
+}
+
+.hero-sub-headline {
+  color: $darkGrey;
+  font-size: 47px;
+  margin: -35px 0px 0px;
+  @media only screen and (max-width: $mobile) {
+    margin: -15px 0px 0px;
+    font-size: 32px;
+  }
+}
+
+.hero-slogan {
+  color: $textGrey;
+  font-size: 24px;
+  @media only screen and (max-width: $mobile) {
+  }
+}

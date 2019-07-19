@@ -1,0 +1,99 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.values-wrapper {
+  background-color: $beige;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  @media only screen and (min-width: $xl) {
+    justify-content: center;
+  }
+  @media only screen and (max-width: $tabletBig) {
+    height: 100%;
+  }
+}
+
+.values-headline {
+  color: $lightTextGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+  @media only screen and (max-width: $mobile) {
+    padding-top: 24px;
+    font-size: 48px;
+    // line-height: 30px;
+  }
+}
+
+.values-sub-headline {
+  color: $textGrey;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: -16px;
+  text-align: center;
+  @media only screen and (min-width: $xxl) {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: -0px;
+  }
+}
+
+
+.values-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  @media only screen and (max-width: $tabletBig) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+.values-box {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px;
+  padding: 50px 40px;
+  margin: 20px 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  &:hover {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  @media only screen and (max-width: $mobile) {
+    max-width: 100vw;
+  }
+}
+
+.values-box-icon img {
+  width: 50px;
+}
+
+.values-box-headline {
+  color: $black;
+  margin: 40px 0 30px;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid $darkGrey;
+}
+
+.values-box-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $textGrey;
+}

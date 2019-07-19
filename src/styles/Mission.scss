@@ -1,0 +1,38 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.mission-wrapper {
+  background-color: $lightBlack;
+}
+
+.mission-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mission-text {
+  color: $white;
+  font-weight: 700;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 80px;
+  p {
+    padding-bottom: 10px;
+  }
+  @media only screen and (max-width: $tabletBig) {
+    font-size: 57px;
+    line-height: 57px;
+  }
+  @media only screen and (max-width: $mobile) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+span.typed-cursor.typed-cursor--blink {
+  display: none;
+}
+
