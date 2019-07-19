@@ -29,7 +29,7 @@ const Portfolio = () => {
 
 
       <div className="portfolio-boxes">
-        <div className="portfolio-box lightGrey filter-web">
+        <div className="portfolio-box darkBlue filter-web">
           <div className="portfolio-box-image">
             <img src={archipinion_webapp} alt="archipinion_webapp" />
             <div className="portfolio-box-overlay">
@@ -59,7 +59,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-box darkBlue filter-web">
+        <div className="portfolio-box lightGrey filter-web">
           <div className="portfolio-box-image">
             <img src={landingpages} alt="landingpages" />
             <div className="portfolio-box-overlay">
@@ -74,7 +74,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-box lightGrey filter-web">
+        <div className="portfolio-box darkBlue filter-web">
           <div className="portfolio-box-image">
             <img src={dashboard} alt="dashboard" />
             <div className="portfolio-box-overlay">
@@ -104,7 +104,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-box darkBlue filter-web">
+        <div className="portfolio-box lightGrey filter-web">
           <div className="portfolio-box-image">
             <img src={hrmanager} alt="hrmanager" />
             <div className="portfolio-box-overlay">
@@ -119,7 +119,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-box lightGrey filter-web">
+        <div className="portfolio-box darkBlue filter-web">
           <div className="portfolio-box-image">
             <img src={searchguard} alt="searchguard" />
             <div className="portfolio-box-overlay">

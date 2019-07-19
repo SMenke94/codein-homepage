@@ -1,0 +1,93 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.contact-wrapper {
+  background-color: $white;
+  height: 100vh;
+  max-height: 1500px;
+  min-height: 500px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-headline {
+  color: $lightTextGrey;
+  display: flex;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1em;
+  &:first-child {
+    padding-top: 50px;
+  }
+  @media only screen and (max-width: $mobile) {
+    padding-top: 24px;
+    font-size: 36px;
+  }
+}
+
+.contact-info-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  @media only screen and (max-width: $mobile) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.contact-box-headline {
+  font-size: 24px;
+  color: $textGrey;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-box-text {
+  margin: 10px 0 20px 0;
+  // min-width: 300px;
+  text-align: center;
+}
+
+.button {
+  margin: 120px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  color: $white;
+	cursor: pointer;
+	svg {
+		height: 55px;
+		width: 150px;
+		fill: none;
+		stroke-width: 5;
+		.o1 {
+			stroke: rgba($peach, 0.7);
+      fill: $peach;
+			transition: all 1s ease-in-out;
+		}
+		.o2 {
+			stroke: white;
+			stroke-dasharray: 20 420;
+			stroke-dashoffset: 20;
+			transition: all 1s ease-in-out;
+		}
+	}
+	span {
+		position: absolute;
+		margin: auto 0;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	&:hover {
+		.o1{
+			fill: rgba($peach, 0.8);
+		}
+		.o2 {
+			stroke-dashoffset: -420;
+		}
+	}
+}

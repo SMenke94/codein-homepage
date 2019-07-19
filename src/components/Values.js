@@ -8,7 +8,7 @@ const Values = () =>{
   return (
     <div className="values-wrapper" id="values">
       <div className="row">
-        <div className="values-container">
+        {/* <div className="values-container"> */}
           <div className="values-headline">What We Stand For</div>
           <div className="values-sub-headline">
             Learn and grow as a team. Create impactful products. Build
@@ -47,7 +47,7 @@ const Values = () =>{
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

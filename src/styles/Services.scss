@@ -2,8 +2,10 @@
 @import '../appearance/Breakpoints.scss';
 
 .services-wrapper {
-  min-height: 100vh;
+  height: 100%;
+  min-height: 300px; 
   padding-bottom: 50px;
+  background: $lightGrey;
 }
 
 .services-container {
@@ -12,7 +14,7 @@
 }
 
 .services-headline {
-  color: $darkGrey;
+  color: $lightTextGrey;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
@@ -28,7 +30,7 @@
   font-size: 18px;
   line-height: 24px;
   margin-top: -16px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.8px;
   @media only screen and (max-width: $mobile) {
@@ -38,124 +40,52 @@
   }
 }
 
-.card-container {
+.services-boxes {
   display: flex;
-  justify-content: center;
-	flex-flow: wrap;
-	* {
-		box-sizing: border-box;
-	}
-  @media only screen and (max-width: $mobile) {
+  justify-content: space-between;
+  margin-top: 20px;
+  @media only screen and (max-width: $tabletBig) {
     flex-direction: column;
-    margin-right: 15px;
-  }
-	.card {
-    font-weight: bold;
-		position: relative;
-    width: 45%;
-    margin: 10px;
-    @media only screen and (max-width: $mobile) {
-      width: 100%;
-    }
-		.front {
-      padding: 30px;
-			width: 100%;
-			height: 350px;
-			border: 2px solid $darkGrey;
-			background: $white;
-			text-decoration: none;
-			color: $darkGrey;
-			display: block;
-      transition: 0.5s ease;
-			&:hover {
-        transform: translate(-30px, -30px);
-				border-color: $pantone;
-				.card--display {
-          display: none;
-				}
-				.card--hover {
-          display: block;
-				}
-			}
-			.card--display {
-        p {
-          font-size: 50px;
-          margin-top: 180px;
-          @media only screen and (max-width: $tabletBig) {
-            font-size: 32px;
-          }
-				}
-				h2 {
-          margin: 20px 0 0;
-				}
-			}
-			.card--hover {
-        display: none;
-				h2 {
-          margin: 20px 0;
-				}
-				p {
-          font-weight: normal;
-					line-height: 1.5;
-					&.link {
-            margin: 20px 0 0;
-						font-weight: bold;
-						color: $pantone;
-					}
-				}
-			}
-		}
-		.card--border {
-      position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0;
-			top: 0;
-			border: 2px dashed $darkGrey;
-			z-index: -1;
-    }
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-color: transparent;
-      border-style: solid;
-    }
-    &:after {
-      border-width: 1.35em;
-      border-left-color: $black;
-      border-top-color: $black;
-      border-bottom-color: $white;
-      border-right-color: $white;
-      transition: border 0.3s;
-      @media only screen and (max-width: $mobile) {
-        border-left-color: $pantone;
-        border-top-color: $pantone;
-      }
-    }
-	}
-}
-
-@media only screen and (max-width: $mobile) {
-  .card-container .card .front {
-    border: 2px dashed $pantone;
-    .card--display {
-      display: none;
-    }
-    .card--hover {
-      display: block;
-    }
+    margin-top: 20px;
   }
 }
 
-.card:hover:after {
-  border-width: 0;
-  border-bottom: 2px dashed $black;
-  border-right: 2px dashed $black;
-  // border-left-color: $black;
-  // border-top-color: $black;
-  // border-bottom-color: $white;
-  // border-right-color: $white;
+.services-box {
+  background-color: $beige;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px;
+  padding: 30px 20px;
+  margin: 20px 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  &:hover {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  @media only screen and (max-width: $mobile) {
+    max-width: 100vw;
+  }
+}
+
+.services-box-icon img {
+  width: 50px;
+}
+
+.services-box-headline {
+  color: $black;
+  margin: 10px 0 20px;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid $darkGrey;
+}
+
+.services-box-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $textGrey;
 }

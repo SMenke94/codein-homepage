@@ -5,6 +5,8 @@
   background-color: $beige;
   perspective: 40px;
   height: calc(100vh - 70px);
+  max-height: 1000px;
+  min-height: 300px;
   @media only screen and (max-width: $mobile) {
     height: calc(100vh - 140px);
   }

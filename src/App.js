@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
 import References from './components/References';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Portfolio />
       <Team />
       {/* <References /> */}
+      <Contact />
     </div>
   );
 };

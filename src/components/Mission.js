@@ -23,7 +23,7 @@ class Mission extends Component {
     let timeout = undefined;
     if (this.state.itsTime) {
       timeout = (
-        <Typed strings={["With ease, on time, with no pain."]} typeSpeed={40} />
+        <Typed strings={["With ease, on time, no pain."]} typeSpeed={40} />
       );
     }
 

@@ -4,7 +4,8 @@
 /* Team Component Styling */
 .team-wrapper {
   background-color: $lightBlack;
-  min-height: 100vh;
+  // height: 100vh;
+  min-height: 1200px;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -18,7 +19,7 @@
 }
 
 .team-header {
-  color: $black;
+  color: $white;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
@@ -42,7 +43,7 @@
 }
 
 .team-card {
-  width: 410px;
+  max-width: 410px;
   height: 180px;
   background-color: rgba(35,35,35,1);
   box-shadow: 10px 10px 0px rgba(10,10,10,0.35);
@@ -58,16 +59,20 @@
   z-index: 4;
   position: absolute;
   // @media only screen and (max-width: $mobile) {
-  //   width: 100px;
-  // }
-}
-
-.team-card-general {
-  padding: 1rem;
-  color: $lightGrey;
-  margin-left: 170px;
-  @media only screen and (max-width: $mobile) {
-    padding: -10px 5px;
+    //   width: 100px;
+    // }
+  }
+  
+  .team-card-general {
+    padding: 1rem;
+    color: $lightGrey;
+    margin-left: 170px;
+    @media only screen and (max-width: $mobile) {
+      padding: -10px 5px;
+    }
+    @media only screen and (max-width: $xs) {
+      margin-left: 150px;
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
   }
 }
 
@@ -77,6 +82,10 @@
   font-weight: bold;
   @media only screen and (max-width: $mobile) {
     font-size: 16px;
+  }
+  @media only screen and (max-width: $xs) {
+    font-size: 12px;
+    line-height: 10px;
   }
 }
 
@@ -93,6 +102,7 @@
   // font-style: italic;
   @media only screen and (max-width: $mobile) {
     margin-top: 5px;
+    font-size: 12px;
   }
 }
 
