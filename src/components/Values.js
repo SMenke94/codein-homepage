@@ -19,7 +19,7 @@ const Values = () =>{
               <div className="values-box-icon">
                 <img src={star} alt="star" />
               </div>
-              <div className="values-box-headline">Excitment</div>
+              <div className="values-box-headline">Excitement</div>
               <div className="values-box-text">
                 We love coding and aspire to build extraordinary products that
                 excite us and have an impact to the world.

@@ -1,0 +1,32 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+/* References Component Styling */
+.references-wrapper {
+  background-color: $beige;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.references-headline {
+  color: $lightTextGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.references-image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.references-image-wrapper img {
+  width: 200px;
+  margin: 25px;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
