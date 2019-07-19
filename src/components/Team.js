@@ -88,7 +88,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={saskia} alt="" />
             <div className="team-card-general">
@@ -121,7 +120,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={katrin} alt="" />
             <div className="team-card-general">
@@ -153,7 +151,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={jakob} alt="" />
             <div className="team-card-general">
@@ -184,7 +181,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={marcus} alt="" />
             <div className="team-card-general">
@@ -214,7 +210,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={max} alt="" />
             <div className="team-card-general">
@@ -244,7 +239,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="team-card">
             <img src={eddie} alt="" />
             <div className="team-card-general">
@@ -274,11 +268,9 @@ const Team = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 }
-
 export default Team;
