@@ -2,7 +2,7 @@
 @import '../appearance/Breakpoints.scss';
 
 .hero-wrapper {
-  background-color: $beige; /*lightgrey */
+  background-color: $beige;
   perspective: 40px;
   height: calc(100vh - 70px);
   @media only screen and (max-width: $mobile) {
@@ -16,9 +16,6 @@
   justify-content: center;
   flex-direction: column;
   max-height: 300px;
-  // @media only screen and (max-width: $mobile) {
-  //   height: 100%;
-  // }
 }
 
 .hero-text-wrapper {

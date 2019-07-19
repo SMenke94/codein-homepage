@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Portfolio.scss';
 import archipinion_webapp from '../assets/images/portfolio/archipinion_webapp.png';
 import archipinion_ios from '../assets/images/portfolio/archipinion_ios.png';
 import landingpages from '../assets/images/portfolio/landingpages.png';
@@ -16,15 +17,15 @@ const Portfolio = () => {
         All App Web
       </div> */}
 
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="portfolio-filter">
-            <li data-filter="*" class="filter-active">All</li>
+      {/* <div className="row">
+        <div className="col-lg-12">
+          <ul className="portfolio-filter">
+            <li data-filter="*" className="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-web">Web</li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="portfolio-boxes">
@@ -36,8 +37,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
                 <p style={{ fontSize: '12px' }}>web-based video platform for architects</p>
               </div>
-              <a href="https://live.archipinion.com" target="_blank" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              <a href="https://live.archipinion.com" target="_blank" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a>
             </div>
           </div>
@@ -51,8 +52,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
                 <p style={{ fontSize: '12px' }}>ios app compatible with webapp</p>
               </div>
-              {/* <a href="" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a> */}
             </div>
           </div>
@@ -66,8 +67,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
                 <p style={{ fontSize: '12px' }}>SEO landing pages</p>
               </div>
-              <a href="https://video.archipinion.com/mehrgeschossig-in-massivholz" target="_blank" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              <a href="https://video.archipinion.com/mehrgeschossig-in-massivholz" target="_blank" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a>
             </div>
           </div>
@@ -81,8 +82,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>Sales Dashboard</p>
                 <p style={{ fontSize: '12px' }}>Gamification Dashboards for Sales Teams</p>
               </div>
-              <a href="https://www.salesdashboard.de/" target="_blank" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              <a href="https://www.salesdashboard.de/" target="_blank" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a>
             </div>
           </div>
@@ -96,8 +97,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>Nestle Finder</p>
                 <p style={{ fontSize: '12px' }}>Nutrition App</p>
               </div>
-              {/* <a href="" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a> */}
             </div>
           </div>
@@ -111,8 +112,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>Käuferportal</p>
                 <p style={{ fontSize: '12px' }}>internal recruiting platform</p>
               </div>
-              {/* <a href="" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a> */}
             </div>
           </div>
@@ -126,8 +127,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>Searchguard</p>
                 <p style={{ fontSize: '12px' }}>SEO optimized landing page</p>
               </div>
-              {/* <a href="" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a> */}
             </div>
           </div>
@@ -141,8 +142,8 @@ const Portfolio = () => {
                 <p style={{ fontWeight: 'bold' }}>Volders</p>
                 <p style={{ fontSize: '12px' }}>Subscription cancellation platform</p>
               </div>
-              {/* <a href="" class="portfolio-box-overlay-icon">
-                <i class="fas fa-external-link-alt" />
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
               </a> */}
             </div>
           </div>
