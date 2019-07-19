@@ -6,6 +6,7 @@ import Mission from './components/Mission';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
+import References from './components/References';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Services />
       <Portfolio />
       <Team />
+      <References />
     </div>
   );
 };

@@ -35,7 +35,7 @@ const Portfolio = () => {
             <div className="portfolio-box-overlay">
               <div className="portfolio-box-overlay-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>web-based video platform for architects</p>
+                <p style={{ fontSize: '12px' }}>Video platform for architects</p>
               </div>
               <a href="https://live.archipinion.com" target="_blank" className="portfolio-box-overlay-icon">
                 <i className="fas fa-external-link-alt" />
@@ -50,7 +50,7 @@ const Portfolio = () => {
             <div className="portfolio-box-overlay">
               <div className="portfolio-box-overlay-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>ios app compatible with webapp</p>
+                <p style={{ fontSize: '12px' }}>ios app</p>
               </div>
               {/* <a href="" className="portfolio-box-overlay-icon">
                 <i className="fas fa-external-link-alt" />
