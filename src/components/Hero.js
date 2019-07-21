@@ -1,108 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/Hero.scss';
 import NavBar from './essentials/NavBar';
 
-export default class Hero extends Component {
-  constructor(props) {
-    super(props);
-    this.containerRef = React.createRef();
-    this.boxRef = React.createRef();
-  }
-
-  // async componentDidMount() {
-  //   // Init
-  //   const container = this.containerRef.current;
-  //   const inner = this.boxRef.current;
-
-  //   // Mouse
-  //   var mouse = {
-  //     _x: 0,
-  //     _y: 0,
-  //     x: 0,
-  //     y: 0,
-  //     updatePosition: function(event) {
-  //       var e = event || window.event;
-  //       this.x = e.clientX - this._x;
-  //       this.y = (e.clientY - this._y) * -1;
-  //     },
-  //     setOrigin: function(e) {
-  //       this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-  //       this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-  //     },
-  //     show: function() {
-  //       return "(" + this.x + ", " + this.y + ")";
-  //     }
-  //   };
-
-  //   // Track the mouse position relative to the center of the container.
-  //   mouse.setOrigin(container);
-
-  //   //-----------------------------------------
-
-  //   var counter = 0;
-  //   var updateRate = 10;
-  //   var isTimeToUpdate = function() {
-  //     return counter++ % updateRate === 0;
-  //   };
-
-  //   //-----------------------------------------
-
-  //   var onMouseEnterHandler = function(event) {
-  //     update(event);
-  //   };
-
-  //   var onMouseLeaveHandler = function() {
-  //     inner.style = "";
-  //   };
-
-  //   var onMouseMoveHandler = function(event) {
-  //     if (isTimeToUpdate()) {
-  //       update(event);
-  //     }
-  //   };
-
-  //   //-----------------------------------------
-
-  //   var update = function(event) {
-  //     mouse.updatePosition(event);
-  //     updateTransformStyle(
-  //       (mouse.y / inner.offsetHeight / 2).toFixed(2),
-  //       (mouse.x / inner.offsetWidth / 2).toFixed(2)
-  //     );
-  //   };
-
-  //   var updateTransformStyle = function(x, y) {
-  //     var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-  //     inner.style.transform = style;
-  //     inner.style.webkitTransform = style;
-  //     inner.style.mozTransform = style;
-  //     inner.style.msTransform = style;
-  //     inner.style.oTransform = style;
-  //   };
-
-  //   //-----------------------------------------
-
-  //   container.onmouseenter = onMouseEnterHandler;
-  //   container.onmouseleave = onMouseLeaveHandler;
-  //   container.onmousemove = onMouseMoveHandler;
-  // }
-
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <div className="hero-wrapper" ref={this.containerRef}>
-          <div className="row hero-text-wrapper">
-            <div className="hero-box" ref={this.boxRef}>
-              <div className="hero-headline">code&#183;in</div>
-              <div className="hero-sub-headline">more than IT</div>
-              <div className="hero-slogan">
-                Your digital lab for impactful products
-              </div>
-            </div>
+const Hero = () => {
+  return (
+    <div className="hero-wrapper">
+      <NavBar />
+      <div className="row hero-row-wrapper">
+        <div class="blob">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 310 350"
+          >
+            <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z" />
+          </svg>
+        </div>
+        <div className="hero-box">
+          <div className="hero-headline">code&#183;in</div>
+          <div className="hero-sub-headline">more than IT</div>
+          <div className="hero-slogan">
+            Your digital lab for impactful products
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 };
+
+export default Hero;

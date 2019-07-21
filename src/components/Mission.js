@@ -6,41 +6,50 @@ class Mission extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      itsTime: false
+      itsTime: false,
+      typedText: undefined,
+      timeout: undefined,
     };
   }
 
   componentDidMount() {
-    setTimeout(
-      function() {
-        this.setState({ itsTime: true });
-      }.bind(this),
-      4500
-    );
+    window.addEventListener("scroll", this.handleScroll);
   }
 
-  render() {
-    let timeout = undefined;
-    if (this.state.itsTime) {
-      timeout = (
-        <Typed strings={["With ease, on time, no pain."]} typeSpeed={40} />
+  handleScroll = () => {
+    setTimeout(() => {
+      this.setState({
+        timeout:
+          <Typed
+            strings={["With ease, on time, no pain."]}
+            typeSpeed={40}
+          />
+      })
+    }, 4500);
+    if (window.pageYOffset > window.innerHeight - 100) {
+      const typedText = (
+        <div>
+        <Typed
+          strings={[
+            "We help companies digitalize their ventures and products."
+          ]}
+          typeSpeed={40}
+          style={{ color: "#000" }}
+        />
+          </div>
       );
+      this.setState({ typedText });
     }
+  };
 
+  render() {
     return (
       <div className="mission-wrapper" id="mission">
         <div className="row">
           <div className="mission-box">
             <div className="mission-text">
-              <Typed
-                strings={[
-                  "We help companies digitalize their ventures and products."
-                ]}
-                typeSpeed={40}
-                style={{ color: "#000" }}
-              />
-              <br />
-              {timeout}
+              {this.state.typedText}
+              {this.state.timeout}
             </div>
           </div>
         </div>

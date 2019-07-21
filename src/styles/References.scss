@@ -4,16 +4,26 @@
 /* References Component Styling */
 .references-wrapper {
   background-color: $beige;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
 }
 
+.row#references-row {
+  @media only screen and (max-width: $tabletBig) {
+    padding: 0;
+  }
+}
+
 .references-headline {
-  color: $lightTextGrey;
+  color: $lightBlack;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
   padding-top: 50px;
+  @media only screen and (max-width: $mobile) {
+    padding-top: 24px;
+    font-size: 48px;
+  }
 }
 
 .references-image-wrapper {
@@ -26,7 +36,7 @@
 .references-image-wrapper img {
   width: 200px;
   margin: 25px;
-  &:hover {
-    transform: scale(1.2);
-  }
+  // &:hover {
+  //   transform: scale(1.2);
+  // }
 }

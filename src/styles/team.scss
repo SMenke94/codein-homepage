@@ -1,10 +1,8 @@
 @import '../appearance/ColorPalette.scss';
 @import '../appearance/Breakpoints.scss';
 
-/* Team Component Styling */
 .team-wrapper {
   background-color: $lightBlack;
-  // height: 100vh;
   min-height: 1200px;
   width: 100vw;
   display: flex;
@@ -19,7 +17,7 @@
 }
 
 .team-header {
-  color: $white;
+  color: $lightGrey;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
@@ -40,6 +38,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  @media only screen and (max-width: $tabletBig) {
+    justify-content: center;
+  }
 }
 
 .team-card {
@@ -58,21 +59,18 @@
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
   z-index: 4;
   position: absolute;
-  // @media only screen and (max-width: $mobile) {
-    //   width: 100px;
-    // }
+}
+
+.team-card-general {
+  padding: 1rem;
+  color: $lightGrey;
+  margin-left: 170px;
+  @media only screen and (max-width: $mobile) {
+    padding: -10px 5px;
   }
-  
-  .team-card-general {
-    padding: 1rem;
-    color: $lightGrey;
-    margin-left: 170px;
-    @media only screen and (max-width: $mobile) {
-      padding: -10px 5px;
-    }
-    @media only screen and (max-width: $xs) {
-      margin-left: 150px;
-      padding: 0.5rem 0.5rem 0.5rem 2rem;
+  @media only screen and (max-width: $xs) {
+    margin-left: 150px;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
   }
 }
 
@@ -99,7 +97,6 @@
 .team-card-general-bio {
   font-size: 14px;
   margin-top: 15px;
-  // font-style: italic;
   @media only screen and (max-width: $mobile) {
     margin-top: 5px;
     font-size: 12px;
@@ -118,7 +115,7 @@
   align-items: center;
 }
 
-.team-card:hover .team-card:active .team-card-additional {
+.team-card:hover .team-card-additional {
   width: 100%;
 }
 

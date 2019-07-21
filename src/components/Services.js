@@ -45,7 +45,7 @@ const Services = () => {
               <div className="services-box-text">
                 <p>Web & Mobile</p>
                 <p>Fullstack Sofware Development</p>
-                <p>Fullstack Sofware DevelopmentTracking & Analysis</p>
+                <p>Tracking & Analysis</p>
                 <p>Salesforce</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Services = () => {
                   <b>Frontend:</b> React (Native), HTML, CSS, JS, jQuery
                 </p>
                 <p>
-                  <b>Backend:</b> Ruby, Ruby on , Node.js
+                  <b>Backend:</b> Ruby, Ruby on Rails, Node.js
                 </p>
                 <p>
                   <b>Database:</b> MySQL, PostgreSQL
