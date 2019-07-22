@@ -4,7 +4,8 @@
 /* References Component Styling */
 .references-wrapper {
   background-color: $beige;
-  height: 100vh;
+  // height: 100vh;
+  padding-bottom: 30px;
   width: 100vw;
 }
 
@@ -20,7 +21,7 @@
   font-weight: 700;
   text-align: center;
   padding-top: 50px;
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $tabletBig) {
     padding-top: 24px;
     font-size: 48px;
   }
@@ -34,9 +35,9 @@
 }
 
 .references-image-wrapper img {
-  width: 200px;
+  width: 150px;
   margin: 25px;
-  // &:hover {
-  //   transform: scale(1.2);
-  // }
+  @media only screen and (max-width: $tabletBig) {
+    width: 100px;
+  }
 }

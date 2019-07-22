@@ -13,7 +13,7 @@
   font-weight: 700;
   text-align: center;
   padding-top: 50px;
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $tabletBig) {
     padding: 24px 0;
     font-size: 48px;
   }
@@ -58,10 +58,8 @@
 
 .portfolio-box-image img {
   width: 100%;
+  height: 100%;
   padding: 10px;
-  @media only screen and (max-width: $tabletBig) {
-    height: 100%;
-  }
 }
 
 .portfolio-box-overlay {

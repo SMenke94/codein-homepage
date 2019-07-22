@@ -23,6 +23,9 @@ const Hero = () => {
             Your digital lab for impactful products
           </div>
         </div>
+        <a href="#mission">
+          <div className="hero-scroll-arrow"></div>
+        </a>
       </div>
     </div>
   );

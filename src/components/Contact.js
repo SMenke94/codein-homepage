@@ -6,18 +6,13 @@ const Contact = () => {
     <div className="cotact-wrapper" id="contact">
       <div className="row">
         <div className="contact-headline">
-          Let's
-          <div style={{ color: "#000", padding: "0 10px" }}>
-            {" "}
-            get in touch
-          </div>
+          Let's<div style={{ color: "#000", padding: "0 10px" }}>get in touch</div>
         </div>
         <div className="contact-headline">
-          Let's
-          <div style={{ color: "#000", padding: "0 10px" }}> meet up</div>
+          Let's<div style={{ color: "#000", padding: "0 10px" }}>meet up</div>
         </div>
         <div className="contact-headline">
-          Let's<div style={{ color: "#000", padding: "0 10px" }}> build </div>
+          Let's<div style={{ color: "#000", padding: "0 10px" }}>build</div>
         </div>
         <a href="mailto:info@web-development.berlin">
           <div class="button">

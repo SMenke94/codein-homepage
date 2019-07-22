@@ -9,14 +9,14 @@ const Services = () => {
         <div className="services-container">
           <div className="services-headline">What We Do</div>
           <div className="services-sub-headline">
-            We believe in the lean startup principle that everything we build
+            We believe in the <b>lean startup principle</b> that everything we build
             should be of value for the user. Therefore our work does not start
             with the question ’Can we build it?’ but rather with ‘Should we
-            build it?’. We want the best possible product for you and your
-            users.
+            build it?’. We want the <b>best possible product for you and your
+            users.</b>
             <br />
             <br />
-            <div style={{ fontWeight: "bold" }}>
+            <div style={{ fontSize: "22px" }}>
               This is why we are more than IT.
             </div>
           </div>
@@ -45,7 +45,7 @@ const Services = () => {
               <div className="services-box-text">
                 <p>Web & Mobile</p>
                 <p>Fullstack Sofware Development</p>
-                <p>Tracking & Analysis</p>
+                <p>Tracking & Analytics</p>
                 <p>Salesforce</p>
               </div>
             </div>

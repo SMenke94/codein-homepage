@@ -3,16 +3,12 @@
 
 .hero-wrapper {
   background-color: $beige;
-  // height: 100vh;
   // max-height: 1000px;
   // min-height: 300px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  @media only screen and (max-width: $mobile) {
-    height: calc(100vh - 140px);
-  }
 }
 
 .hero-row-wrapper {
@@ -67,6 +63,7 @@
   font-weight: bold;
   @media only screen and (max-width: $mobile) {
     font-size: 72px;
+    margin-top: -15px;
   }
 }
 
@@ -83,4 +80,28 @@
 .hero-slogan {
   color: $textGrey;
   font-size: 24px;
+}
+
+.hero-scroll-arrow {
+  position: absolute;
+	left: 50%;
+	bottom: 5%;
+	z-index: 10;
+  width: 15px;
+  height: 15px;
+  border-bottom: 4px solid $darkGrey;
+  border-right: 4px solid $darkGrey;
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: fade_move_down 2s ease-in-out infinite;
+  @media only screen and (max-width: $mobile) {
+    bottom: 15%;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-8px) rotate(45deg); opacity: 1;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,8px) rotate(45deg); opacity: 1; }
 }

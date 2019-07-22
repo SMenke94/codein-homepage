@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/team.scss";
+import tap_icon from '../assets/images/tap.png'
 import sebastian from "../assets/images/team/team-sebastian.png";
 import saskia from "../assets/images/team/team-saskia4.png";
 import katrin from "../assets/images/team/team-katrin-1.png";
@@ -15,10 +16,19 @@ import tag_manager from "../assets/images/stack/tag-manager.svg";
 import salesforce from "../assets/images/stack/salesforce.svg";
 
 const Team = () => {
+  let subHeadlineText = 'Hover over each profile for more info';
+  if (window.innerWidth < 1200) {
+    subHeadlineText = 'Click on each picture for more info';
+  }
+
   return (
     <div className="team-wrapper" id="team">
       <div className="row" id="team-row">
-        <div className="team-header">Team</div>
+        <div className="team-headline">Team</div>
+        <div className="team-sub-header-box">
+          <div className="team-sub-headline">{subHeadlineText}</div>
+          <img src={tap_icon} style={{ width: '18px' }} />
+        </div>
         {/* <div className="team-description">
           We all come from different professional backgrounds. Each bringing a unique set of skills to the team. 
           Brought together by a shared passion for coding and building tech products - making us more than IT. 
@@ -186,7 +196,7 @@ const Team = () => {
             <img src={jakob} alt="" />
             <div className="team-card-general">
               <div className="team-card-name">Jakob Bethmann</div>
-              <div className="team-card-title">Salesforce Guru</div>
+              <div className="team-card-title">Bug Hunter</div>
               <div className="team-card-general-bio">
                 The programmer`s lifestyle is a pathway to many abilities some
                 consider to be unnatural.

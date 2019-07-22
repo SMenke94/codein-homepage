@@ -34,7 +34,7 @@ class Mission extends Component {
             "We help companies digitalize their ventures and products."
           ]}
           typeSpeed={40}
-          style={{ color: "#000" }}
+          style={{ color: "#6A6A6A" }}
         />
           </div>
       );

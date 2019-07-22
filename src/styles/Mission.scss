@@ -11,16 +11,13 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  height: 101vh;
-  // min-height: 100vh;
-  max-height: 1000px;
   min-height: 500px;
 }
 
 .mission-text {
   color: $white;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 72px;
   font-weight: bold;
   line-height: 80px;
   p {
@@ -33,6 +30,9 @@
   @media only screen and (max-width: $mobile) {
     font-size: 48px;
     line-height: 48px;
+  }
+  @media only screen and (max-width: $xs) {
+    font-size: 36px;
   }
 }
 
