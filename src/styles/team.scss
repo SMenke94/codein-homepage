@@ -4,6 +4,7 @@
 .team-wrapper {
   background-color: $lightBlack;
   min-height: 1200px;
+  padding-bottom: 3%;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -17,7 +18,7 @@
 }
 
 .team-headline {
-  color: $lightGrey;
+  color: $beige;
   font-size: 96px;
   font-weight: 700;
   text-align: center;

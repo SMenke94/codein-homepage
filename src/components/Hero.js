@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
         </div>
         <a href="#mission">
-          <div className="hero-scroll-arrow"></div>
+          <div className="hero-scroll-arrow bounce"></div>
         </a>
       </div>
     </div>
