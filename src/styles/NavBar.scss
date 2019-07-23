@@ -32,35 +32,35 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+img.navbar-logo-style {
+  width: 40px;
+  margin-top: 32px;
+  cursor: pointer;
+  @media only screen and (max-width: $mobile) {
+    width: 30px;
   }
-  
-  img.navbar-logo-style {
-    width: 40px;
-    margin-top: 32px;
-    cursor: pointer;
-    @media only screen and (max-width: $mobile) {
-      width: 30px;
-    }
+}
+
+.navbar-nav-link {
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 2px;
+  &:hover, &:focus {
+    margin-bottom: 0px;
   }
-  
-  .navbar-nav-link {
-    text-transform: uppercase;
-    line-height: 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: $white;
-    font-weight: bold;
-    margin-bottom: 2px;
-    &:hover, &:focus {
-      margin-bottom: 0px;
-    }
-  }
-  
+}
+
 .navbar-overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   top: 0;
   left: 0;
   background-color: $beige;
@@ -74,7 +74,6 @@
   align-items: center;
   margin: 24px 48px;
   color: $beige;
-
 }
 
 .navbar-close-btn {
