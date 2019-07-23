@@ -5,10 +5,6 @@ For repository rights contact the repository owner (:octocat:: SMenke94 - Saskia
 
 &nbsp;
 
-## The Application
-
-
-&nbsp;
 
 # For Developers
 ## Stack
@@ -26,7 +22,13 @@ $ npm start
 ```
 
 ## Deployment
-Info will follow.
+To deploy the website simply run
+```
+$ npm run build
+$ aws s3 sync ./build s3://codein.berlin
+```
+
+You will also need run an invalidation in cloudfront.
 
 &nbsp;
 
