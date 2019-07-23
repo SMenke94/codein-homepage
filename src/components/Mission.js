@@ -26,6 +26,7 @@ class Mission extends Component {
           />
       })
     }, 4500);
+
     if (window.pageYOffset > window.innerHeight - 100) {
       const typedText = (
         <div>

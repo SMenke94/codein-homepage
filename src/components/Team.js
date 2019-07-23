@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/team.scss";
 import tap_icon from '../assets/images/tap.png'
 import sebastian from "../assets/images/team/team-sebastian.png";
+import martin from "../assets/images/team/team-martin.png";
 import saskia from "../assets/images/team/team-saskia4.png";
 import katrin from "../assets/images/team/team-katrin-1.png";
 import robin from "../assets/images/team/team-robin.png";
@@ -73,6 +74,44 @@ const Team = () => {
               </div>
             </div>
           </div>
+
+          <div className="team-box">
+            <div className="team-card">
+              <img src={martin} alt="" />
+              <div className="team-card-general">
+                <div className="team-card-name">Martin Dess</div>
+                <div className="team-card-title">Bavarian Boss</div>
+                <div className="team-card-general-bio">
+                  Being curious never stops when you enjoy doing what you do and that simply creates energy.
+              </div>
+              </div>
+              <div className="team-card-additional">
+                <div className="team-card-additional-info">
+                  <div className="team-card-additional-info-title">
+                    Entrepreneur
+                </div>
+                  <div className="team-card-additional-info-title">
+                    Founder
+                </div>
+                {/* <div className="team-card-additional-info-title">
+                    Stanford Leadership
+                </div> */}
+                  <div className="team-card-additional-info-stack">
+                    {/* <i className="fab fa-html5" />
+                    <i className="fab fa-css3-alt" />
+                    <i className="fab fa-sass" />
+                    <i className="fab fa-js" />
+                    <i className="fab fa-react" />
+                    <img src={ruby} alt="" />
+                    <img src={rails} alt="" />
+                    <i className="fab fa-node-js" />
+                    <i className="fas fa-database" />
+                    <i className="fab fa-aws" /> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
 
           <div className="team-card">
             <img src={robin} alt="" />
