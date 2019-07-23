@@ -1,0 +1,27 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.footer-wrapper {
+  background-color: $lightBlack;
+  width: 100vw;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  font-size: 14px;
+}
+
+.footer-container a {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $pantone;
+  }
+}

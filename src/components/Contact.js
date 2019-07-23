@@ -27,9 +27,9 @@ const Contact = () => {
           <div className="contact-address">
             <div className="contact-box-headline">Office</div>
             <div className="contact-box-text">
-              <p>CodeIn UG (haftungsbeschränkt)</p>
-              <p>Potsdamer Str. 87</p>
-              <p>10785 Berlin</p>
+              <p>Adrilina UG (haftungsbeschränkt)</p>
+              <p>Elchdamm 74</p>
+              <p>13503 Berlin</p>
               <p>Germany</p>
             </div>
           </div>
