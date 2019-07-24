@@ -2,7 +2,7 @@
 @import '../appearance/Breakpoints.scss';
 
 .values-wrapper {
-  background-color: $beige;
+  background-color: $lightGrey;
 }
 
 .values-container {
@@ -20,7 +20,7 @@
 }
 
 .values-headline {
-  color: $darkGrey;
+  color: $lightTextGrey;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .values-sub-headline {
-  color: $textGrey;
+  color: $darkGrey;
   font-size: 36px;
   line-height: 48px;
   margin-top: -16px;
@@ -62,7 +62,7 @@
 }
 
 .values-box {
-  background-color: $white;
+  background-color: $beige;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
