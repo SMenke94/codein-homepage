@@ -3,6 +3,7 @@ import '../styles/portfolio.scss';
 import archipinion_webapp from '../assets/images/portfolio/archipinion_webapp.png';
 import archipinion_ios from '../assets/images/portfolio/archipinion_ios.png';
 import landingpages from '../assets/images/portfolio/landingpages.png';
+import invoice_checker from '../assets/images/portfolio/invoice_checker.png';
 import dashboard from '../assets/images/portfolio/dashboard2.png';
 import nestle from '../assets/images/portfolio/nestle.png';
 import volders from '../assets/images/portfolio/volders.png';
@@ -76,6 +77,21 @@ const Portfolio = () => {
 
         <div className="portfolio-box darkBlue filter-web">
           <div className="portfolio-box-image">
+            <img src={invoice_checker} alt="invoice_checker" />
+            <div className="portfolio-box-overlay">
+              <div className="portfolio-box-overlay-content">
+                <p style={{ fontWeight: 'bold' }}>archipinion</p>
+                <p style={{ fontSize: '12px' }}>Invoice Checker</p>
+              </div>
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
+              </a> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-box pantone filter-web">
+          <div className="portfolio-box-image">
             <img src={dashboard} alt="dashboard" />
             <div className="portfolio-box-overlay">
               <div className="portfolio-box-overlay-content">
@@ -85,21 +101,6 @@ const Portfolio = () => {
               <a href="https://www.salesdashboard.de/" target="_blank" className="portfolio-box-overlay-icon">
                 <i className="fas fa-external-link-alt" />
               </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="portfolio-box pantone filter-app">
-          <div className="portfolio-box-image">
-            <img src={nestle} alt="nestle" />
-            <div className="portfolio-box-overlay">
-              <div className="portfolio-box-overlay-content">
-                <p style={{ fontWeight: 'bold' }}>Nestle Finder</p>
-                <p style={{ fontSize: '12px' }}>Nutrition App</p>
-              </div>
-              {/* <a href="" className="portfolio-box-overlay-icon">
-                <i className="fas fa-external-link-alt" />
-              </a> */}
             </div>
           </div>
         </div>
@@ -134,7 +135,22 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-box pantone filter-web">
+        <div className="portfolio-box pantone filter-app">
+          <div className="portfolio-box-image">
+            <img src={nestle} alt="nestle" />
+            <div className="portfolio-box-overlay">
+              <div className="portfolio-box-overlay-content">
+                <p style={{ fontWeight: 'bold' }}>Nestle Finder</p>
+                <p style={{ fontSize: '12px' }}>Nutrition App</p>
+              </div>
+              {/* <a href="" className="portfolio-box-overlay-icon">
+                <i className="fas fa-external-link-alt" />
+              </a> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-box lightGrey filter-web">
           <div className="portfolio-box-image">
             <img src={volders} alt="volders" />
             <div className="portfolio-box-overlay">
@@ -148,6 +164,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );
