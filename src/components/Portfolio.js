@@ -143,8 +143,8 @@ const Portfolio = () => {
             <img src={nestle} alt="nestle" />
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
-                <p style={{ fontWeight: 'bold' }}>Nestle Finder</p>
-                <p style={{ fontSize: '12px' }}>Nutrition App</p>
+                <p style={{ fontWeight: 'bold' }}>Codein</p>
+                <p style={{ fontSize: '12px' }}>Nestle Finder & Nutrition App</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
