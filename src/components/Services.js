@@ -44,7 +44,7 @@ const Services = () => {
               <div className="services-box-headline">Development</div>
               <div className="services-box-text">
                 <p>Web & Mobile</p>
-                <p>Fullstack Sofware Development</p>
+                <p>Fullstack Software Development</p>
                 <p>Tracking & Analytics</p>
                 <p>Salesforce</p>
               </div>
