@@ -32,7 +32,7 @@ class Mission extends Component {
         <div>
         <Typed
           strings={[
-            "We help you digitalize your ventures and products."
+            "We help you digitize your ventures and products."
           ]}
           typeSpeed={40}
           style={{ color: "#6A6A6A" }}
