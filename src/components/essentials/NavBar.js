@@ -74,40 +74,40 @@ export default class NavBar extends Component {
                         className="navbar-close-btn"
                       />
                     </div>
-                    <a
+                    {/* <a
                       href="#mission"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
                       mission
+                    </a> */}
+                    <a
+                      href="#services"
+                      className="navbar-nav-link"
+                      activeStyle={style.active}
+                    >
+                      what we do
                     </a>
                     <a
                       href="#values"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      values
-                    </a>
-                    <a
-                      href="#services"
-                      className="navbar-nav-link"
-                      activeStyle={style.active}
-                    >
-                      services
+                      what we value
                     </a>
                     <a
                       href="#portfolio"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      portfolio
+                      what we built
                     </a>
                     <a
                       href="#team"
                       className="navbar-nav-link"
                       activeStyle={style.activeContact}
                     >
-                      team
+                      who we are
                     </a>
                     <a
                       href="#references"
