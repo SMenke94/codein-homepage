@@ -7,6 +7,7 @@ class Mission extends Component {
     super(props);
     this.state = {
       itsTime: false,
+      inputText: undefined,
       typedText: undefined,
       timeout: undefined,
     };
@@ -15,6 +16,12 @@ class Mission extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
+
+  // translateInputforTyped(){
+  //   const {t} = useTranslation();
+  //   const translatedText = t('typedText')
+  //   return translatedText
+  // }
 
   handleScroll = () => {
     setTimeout(() => {
@@ -28,11 +35,12 @@ class Mission extends Component {
     }, 4500);
 
     if (window.pageYOffset > window.innerHeight - 100) {
+
       const typedText = (
         <div>
         <Typed
           strings={[
-            "We help you digitalize your ventures and products."
+            'We help you digitalize your ventures and products.'
           ]}
           typeSpeed={40}
           style={{ color: "#6A6A6A" }}
@@ -49,8 +57,8 @@ class Mission extends Component {
         <div className="row">
           <div className="mission-box">
             <div className="mission-text">
-              {this.state.typedText}
-              {this.state.timeout}
+            {this.state.typedText}         
+            {this.state.timeout}
             </div>
           </div>
         </div>
@@ -58,5 +66,14 @@ class Mission extends Component {
     );
   }
 }
+
+// export default Mission;
+
+// import React from 'react';
+// import { withTranslation } from 'react-i18next';
+
+// function MyComponent({ t, i18n }) {
+//   return <p>{t('my translated text')}</p>
+// }
 
 export default Mission;

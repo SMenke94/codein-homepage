@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../../styles/NavBar.scss';
 import menu from "../../assets/images/menu.png";
 import cross from "../../assets/images/cross.png";
+import i18n from './../../i18n-init';
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -39,6 +40,10 @@ export default class NavBar extends Component {
         border: "2px solid #00FCE5"
       }
     };
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    }
 
     return (
       <div className={this.state.visible ? "navbar" : null}>
@@ -123,6 +128,10 @@ export default class NavBar extends Component {
                     >
                       contact
                     </a>
+                    <div>
+                      <button onClick={() => changeLanguage('de')}>de</button>
+                      <button onClick={() => changeLanguage('en')}>en</button>
+                    </div>
                   </div>
                 </div>
               </div>
