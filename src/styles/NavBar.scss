@@ -46,13 +46,36 @@ img.navbar-logo-style {
 .navbar-nav-link {
   text-transform: uppercase;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 44px;
   letter-spacing: 1px;
   color: $white;
   font-weight: bold;
   margin-bottom: 2px;
   &:hover, &:focus {
     margin-bottom: 0px;
+  }
+}
+
+.navbar-nav-toggle-box{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    height: 50px;
+    padding-right:5px;
+}
+
+.navbar-nav-button{
+  border: none;
+  background: none;
+  width: 50%;
+  padding: 3px;
+}
+
+.navbar-nav-icon{
+  width: 36px;
+  @media only screen and (max-width: $mobile) {
+    width: 20px;
   }
 }
 

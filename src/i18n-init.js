@@ -1,12 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-export const options =
-  [ 
-    { value: 'en', label: 'English' },
-    { value: 'de', label: 'German' },
-  ];
-
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
@@ -65,8 +59,17 @@ i18n
           "Germany": "Germany",
           "phone": "phone",
           "email": "Email",
-          "footer": "Your destination for impactful tech products."
-
+          "footer": "Your destination for impactful tech products.",
+          "navbar": {
+            "mission":"mission",
+            "values": "values",
+            "services": "services",
+            "portfolio": "portfolio",
+            "team": "team",
+            "references":"references",
+            "contact":"contact"
+          },
+          "With ease, on time, no pain.": "With ease, on time, no pain."
         }
       },
       de: {
@@ -117,13 +120,24 @@ i18n
             "Let's": "Lass",
             "get in touch": "uns in Kontakt treten",
             "meet up": "uns ein Treffen vereinbaren",
-            "build": "uns neues Erschaffen",
+            "build": "uns Neues erschaffen",
             "say_hi": "Sag Hallo",
             "office": "Büro",
             "Germany":"Deutschland",
             "phone": "Telefon",
             "email": "E-Mail",
-            "footer": "Ihr Ziel für beeindruckende digitale Produkte."
+            "footer": "Ihr Ziel für beeindruckende digitale Produkte.",
+            "navbar": {
+              "mission":"Mission",
+              "values": "Werte",
+              "services": "Leistungen",
+              "portfolio": "Portfolio",
+              "team": "Team",
+              "references":"Referenzen",
+              "contact":"Kontakt"
+            },
+            "We help you digitalize your ventures and products.": "Wir helfen Ihnen, Ihre Ideen und Produkte umzusetzen.",
+            "With ease, on time, no pain.": "Einfach, pünktlich und ohne Stress!"
           }
       }
     },

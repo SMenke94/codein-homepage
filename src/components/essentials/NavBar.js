@@ -3,6 +3,9 @@ import '../../styles/NavBar.scss';
 import menu from "../../assets/images/menu.png";
 import cross from "../../assets/images/cross.png";
 import i18n from './../../i18n-init';
+import ReactCountryFlag from 'react-country-flag';
+import { Trans } from "react-i18next";
+import { inherits } from "util";
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -12,6 +15,10 @@ export default class NavBar extends Component {
         width: 0,
         prevScrollpos: window.pageYOffset,
         visible: true
+      },
+      svgSize: {
+        width: '48px',
+        height: '48px'
       }
     };
     this.openNav = this.openNav.bind(this);
@@ -38,12 +45,20 @@ export default class NavBar extends Component {
       },
       activeContact: {
         border: "2px solid #00FCE5"
+      },
+      icon: {
+        width: '36px',
+        height: '36px'
       }
     };
+    
+    if(window.innerWidth < 640){
+      style.icon = {width: '20px', height:'20px'}
+    }
 
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
-    }
+    };
 
     return (
       <div className={this.state.visible ? "navbar" : null}>
@@ -84,53 +99,61 @@ export default class NavBar extends Component {
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      mission
+                      <Trans>navbar.mission</Trans>
                     </a>
                     <a
                       href="#values"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      values
+                      <Trans>navbar.values</Trans>
                     </a>
                     <a
                       href="#services"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      services
+                      <Trans>navbar.services</Trans>
                     </a>
                     <a
                       href="#portfolio"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      portfolio
+                      <Trans>navbar.portfolio</Trans>
                     </a>
                     <a
                       href="#team"
                       className="navbar-nav-link"
                       activeStyle={style.activeContact}
                     >
-                      team
+                      <Trans>navbar.team</Trans>
                     </a>
                     <a
                       href="#references"
                       className="navbar-nav-link"
                       activeStyle={style.activeContact}
                     >
-                      references
+                      <Trans>navbar.references</Trans>
                     </a>
                     <a
                       href="#contact"
                       className="navbar-nav-link"
                       activeStyle={style.activeContact}
                     >
-                      contact
+                      <Trans>navbar.contact</Trans>
                     </a>
-                    <div>
-                      <button onClick={() => changeLanguage('de')}>de</button>
-                      <button onClick={() => changeLanguage('en')}>en</button>
+                    <div className="navbar-nav-toggle-box">
+                      <button className="navbar-nav-button" onClick={() => changeLanguage('de')}>
+                        <div className="navbar-nav-icon">
+                          <ReactCountryFlag code="de" svg styleProps={style.icon}/>
+                        </div>
+                      </button>
+                      <button className="navbar-nav-button" onClick={() => changeLanguage('en')}>
+                        <div className="navbar-nav-icon">
+                          <ReactCountryFlag code="gb" svg styleProps={style.icon}/>
+                        </div>
+                      </button>
                     </div>
                   </div>
                 </div>
