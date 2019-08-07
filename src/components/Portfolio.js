@@ -41,7 +41,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>{t('video_platform')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.video_platform')}</p>
               </div>
               {/* <a href="https://live.archipinion.com" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -56,7 +56,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>{t('survey_results')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.survey_results')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -71,7 +71,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>{t('seo_landingpages')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.seo_landingpages')}</p>
               </div>
               {/* <a href="https://video.archipinion.com/mehrgeschossig-in-massivholz" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -86,7 +86,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>codein</p>
-                <p style={{ fontSize: '12px' }}>{t('invoice_checker')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.invoice_checker')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -101,7 +101,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>codein</p>
-                <p style={{ fontSize: '12px' }}>{t('sales_dashboard')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.sales_dashboard')}</p>
               </div>
               {/* <a href="https://www.salesdashboard.de/" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -116,7 +116,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Käuferportal</p>
-                <p style={{ fontSize: '12px' }}>{t('recruiting_platform')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.recruiting_platform')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -131,7 +131,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Searchguard</p>
-                <p style={{ fontSize: '12px' }}>{t('seo_optimized')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.seo_optimized')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -146,7 +146,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Codein</p>
-                <p style={{ fontSize: '12px' }}>{t('nestle_app')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.nestle_app')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -161,7 +161,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Volders</p>
-                <p style={{ fontSize: '12px' }}>{t('cancellation_platform')}</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.cancellation_platform')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />

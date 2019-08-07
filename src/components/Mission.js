@@ -31,7 +31,7 @@ class Mission extends Component {
         this.setState({
           timeout:
             <Typed
-              strings={[t('mission2')]}
+              strings={[t('mission.line2')]}
               typeSpeed={40}
             />
         });
@@ -40,7 +40,7 @@ class Mission extends Component {
       const typedText = (
         <div>
         <Typed
-          strings={[t('mission1')]}
+          strings={[t('mission.line1')]}
           typeSpeed={40}
           style={{ color: "#6A6A6A" }}
         />

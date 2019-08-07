@@ -20,9 +20,9 @@ const Hero = () => {
         </div>
         <div className="hero-box">
           <div className="hero-headline">code&#183;in</div>
-          <div className="hero-sub-headline">{t('more than IT')}</div>
+          <div className="hero-sub-headline">{t('hero.more_than_it')}</div>
           <div className="hero-slogan">
-            {t('Your digital lab for impactful tech products')}
+            {t('hero.digital_lab')}
           </div>
         </div>
         <a href="#mission">

@@ -21,9 +21,9 @@ const Team = () => {
 
   const { t } = useTranslation();
 
-  let subHeadlineText = t('Hover over each profile for more info');
+  let subHeadlineText = t('team.hover');
   if (window.innerWidth < 1200) {
-    subHeadlineText = t('Click on each picture for more info');
+    subHeadlineText = t('team.click');
   }
 
   return (
