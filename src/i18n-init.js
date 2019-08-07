@@ -9,7 +9,6 @@ i18n
         translation: {
           "more than IT": "more than IT",
           "Your digital lab for impactful tech products": "Your digital lab for impactful tech products",
-          "We help you digitalize your ventures and products.": "We help you digitalize your ventures and products.",
           "What We Do": "What We Do",
           "We believe in the": "We believe in the",
           "startup_principle": "lean startup principle",
@@ -69,7 +68,8 @@ i18n
             "references":"references",
             "contact":"contact"
           },
-          "With ease, on time, no pain.": "With ease, on time, no pain."
+          "mission1": "We help you digitalize your ventures and products.",
+          "mission2": "With ease, on time, no pain."
         }
       },
       de: {
@@ -79,7 +79,7 @@ i18n
             "typedText": "Wir helfen Ihnen, Ihre Ideen und Produkte umzusetzen.",
             "What We Do": "Was wir tun",
             "We believe in the": "Wir glauben an",
-            "startup_principle": "das einfache Startup-Prinzip,",
+            "startup_principle": "die Startup-Philosophie,",
             "user_advantage":"dass alles was wir entwickeln einen Wert für den Nutzer haben sollte. Daher beginnen wir unsere Arbeit nicht mit der Frage „Können wir das entwickeln?“, sondern „Sollten wir das entwickeln?“. Wir möchten das",
             "best_product": "bestmögliche Produkt für Sie und Ihre Nutzer.",
             "more_than_IT": "Deshalb sind wir mehr als IT.",
@@ -126,7 +126,7 @@ i18n
             "Germany":"Deutschland",
             "phone": "Telefon",
             "email": "E-Mail",
-            "footer": "Ihr Ziel für beeindruckende digitale Produkte.",
+            "footer": "Ihre Adresse für beeindruckende, digitale Produkte.",
             "navbar": {
               "mission":"Mission",
               "values": "Werte",
@@ -136,8 +136,8 @@ i18n
               "references":"Referenzen",
               "contact":"Kontakt"
             },
-            "We help you digitalize your ventures and products.": "Wir helfen Ihnen, Ihre Ideen und Produkte umzusetzen.",
-            "With ease, on time, no pain.": "Einfach, pünktlich und ohne Stress!"
+            "mission1": "Wir helfen Ihnen, Ihre Ideen und Produkte umzusetzen.",
+            "mission2": "Einfach, pünktlich und ohne Stress!"
           }
       }
     },

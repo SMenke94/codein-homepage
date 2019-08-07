@@ -5,7 +5,6 @@ import cross from "../../assets/images/cross.png";
 import i18n from './../../i18n-init';
 import ReactCountryFlag from 'react-country-flag';
 import { Trans } from "react-i18next";
-import { inherits } from "util";
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -19,7 +18,8 @@ export default class NavBar extends Component {
       svgSize: {
         width: '48px',
         height: '48px'
-      }
+      },
+      language: undefined
     };
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
@@ -144,12 +144,12 @@ export default class NavBar extends Component {
                       <Trans>navbar.contact</Trans>
                     </a>
                     <div className="navbar-nav-toggle-box">
-                      <button className="navbar-nav-button" onClick={() => changeLanguage('de')}>
+                      <button id='i18n-de' className="navbar-nav-button" onClick={() => changeLanguage('de')}>
                         <div className="navbar-nav-icon">
                           <ReactCountryFlag code="de" svg styleProps={style.icon}/>
                         </div>
                       </button>
-                      <button className="navbar-nav-button" onClick={() => changeLanguage('en')}>
+                      <button id='i18n-en' className="navbar-nav-button" onClick={() => changeLanguage('en')}>
                         <div className="navbar-nav-icon">
                           <ReactCountryFlag code="gb" svg styleProps={style.icon}/>
                         </div>
