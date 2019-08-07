@@ -3,14 +3,13 @@ import Typed from "react-typed";
 import '../styles/Mission.scss';
 import { withTranslation} from 'react-i18next';
 
-class Mission extends Component {
+class MissionComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       itsTime: false,
       typedText: undefined,
-      timeout: undefined,
-      finished: true
+      timeout: undefined
     };
     this.handleScroll = this.handleScroll.bind(this)
     this.updateContent = this.updateContent.bind(this)
@@ -61,8 +60,8 @@ class Mission extends Component {
         <div className="row">
           <div className="mission-box">
             <div className="mission-text">
-            {this.state.typedText}       
-            {this.state.timeout}
+              {this.state.typedText}       
+              {this.state.timeout}
             </div>
           </div>
         </div>
@@ -71,4 +70,4 @@ class Mission extends Component {
   }
 }
 
-export const MissionComp = withTranslation()(Mission);
+export const Mission = withTranslation()(MissionComponent);

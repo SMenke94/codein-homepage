@@ -7,7 +7,7 @@ const Hero = () => {
   const {t} = useTranslation();
   return (
     <div className="hero-wrapper">
-      <NavBar/>
+      <NavBar />
       <div className="row hero-row-wrapper">
         <div class="blob">
           <svg
@@ -30,7 +30,7 @@ const Hero = () => {
         </a>
       </div>
     </div>
-);
+  );
 };
 
 export default Hero;
