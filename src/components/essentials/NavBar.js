@@ -102,14 +102,14 @@ export default class NavBar extends Component {
                       <Trans>navbar.mission</Trans>
                     </a>
                     <a
-                      href="#values"
+                      href="#services"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
                       <Trans>navbar.values</Trans>
                     </a>
                     <a
-                      href="#services"
+                      href="#values"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >

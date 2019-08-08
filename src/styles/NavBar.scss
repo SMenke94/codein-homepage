@@ -50,9 +50,10 @@ img.navbar-logo-style {
   letter-spacing: 1px;
   color: $white;
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   &:hover, &:focus {
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
+    color: $pantone;
   }
 }
 
