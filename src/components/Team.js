@@ -26,7 +26,7 @@ const Team = () => {
   return (
     <div className="team-wrapper" id="team">
       <div className="row" id="team-row">
-        <div className="team-headline">Team</div>
+        <div className="team-headline">Who We Are</div>
         {/* <div className="team-sub-header-box">
           <div className="team-sub-headline">{subHeadlineText}</div>
         </div> */}

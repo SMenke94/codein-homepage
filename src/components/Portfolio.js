@@ -16,7 +16,7 @@ import searchguard from '../assets/images/portfolio/searchguard.png';
 const Portfolio = () => {
   return (
     <div className="portfolio-wrapper" id="portfolio">
-      <div className="portfolio-headline">Portfolio</div>
+      <div className="portfolio-headline">What We Build</div>
       {/* <div className="portfolio-sub-headline">
         All App Web
       </div> */}

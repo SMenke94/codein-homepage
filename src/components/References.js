@@ -13,7 +13,7 @@ const References = () => {
   return (
     <div className="references-wrapper" id="references">
       <div className="row" id="references-row">
-        <div className="references-headline">References</div>
+        <div className="references-headline">Who Trusts Us</div>
         <div className="references-image-wrapper">
           <img src={archipinion} alt="logo" />
           <img src={volders} alt="logo" />

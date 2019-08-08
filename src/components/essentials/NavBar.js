@@ -100,7 +100,7 @@ export default class NavBar extends Component {
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      what we built
+                      what we build
                     </a>
                     <a
                       href="#team"
@@ -114,7 +114,7 @@ export default class NavBar extends Component {
                       className="navbar-nav-link"
                       activeStyle={style.activeContact}
                     >
-                      references
+                      who trusts us
                     </a>
                     <a
                       href="#contact"
