@@ -17,7 +17,7 @@ const Services = () => {
             <br />
             <br />
             <div style={{ fontSize: "22px" }}>
-              {t('services.more_than_IT')}
+              <Trans i18nKey="services.more_than_it">Ob ganzheitliche Betreuung oder punktuelle Unterstützung – <br />wir sind immer mit Herzblut dabei.</Trans>
             </div>
           </div>
           <div className="services-boxes">

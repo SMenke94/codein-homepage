@@ -9,7 +9,7 @@ class MissionComponent extends Component {
     this.state = {
       itsTime: false,
       typedText: undefined,
-      timeout: undefined
+      timeout: undefined,
     };
     this.handleScroll = this.handleScroll.bind(this)
     this.updateContent = this.updateContent.bind(this)
@@ -24,8 +24,6 @@ class MissionComponent extends Component {
   handleScroll = () => {
     const { t } = this.props;
 
-    if (window.pageYOffset > window.innerHeight - 100) {
-
       setTimeout(() => {
         this.setState({
           timeout:
@@ -36,6 +34,7 @@ class MissionComponent extends Component {
         });
       }, 4500);
 
+    if (window.pageYOffset > window.innerHeight - 100) {
       const typedText = (
         <div>
         <Typed
@@ -50,8 +49,8 @@ class MissionComponent extends Component {
   };
 
   updateContent = () => {
-    this.setState({timeout: ""})
-    this.setState({ typedText:""})
+    this.setState({ typedText:"", timeout: ""})
+    // this.setState({timeout: "", clicked: true})
   };
 
   render() {
