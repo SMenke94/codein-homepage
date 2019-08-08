@@ -17,10 +17,10 @@ const Hero = () => {
           </svg>
         </div>
         <div className="hero-box">
-          <div className="hero-headline">code&#183;in</div>
+          <div className="hero-headline">code:in</div>
           <div className="hero-sub-headline">more than IT</div>
           <div className="hero-slogan">
-            Your digital lab for impactful tech products
+            Your destination for impactful tech products
           </div>
         </div>
         <a href="#mission">

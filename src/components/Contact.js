@@ -3,7 +3,7 @@ import '../styles/Contact.scss';
 
 const Contact = () => {
   return (
-    <div className="cotact-wrapper" id="contact">
+    <div className="contact-wrapper" id="contact">
       <div className="row">
         <div className="contact-headline">
           Let's<div style={{ color: "#000", padding: "0 10px" }}>get in touch</div>
@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className="contact-headline">
           Let's<div style={{ color: "#000", padding: "0 10px" }}>build</div>
-        </div>
+        </div> 
         <a href="mailto:info@web-development.berlin">
           <div class="button">
             <span>Say Hi</span>
@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="contact-email">
             <div className="contact-box-headline">Email</div>
             <div className="contact-box-text">
-              info@web-development.berlin
+              Sebastian.schlaak@web-development.berlin
             </div>
           </div>
         </div>

@@ -8,18 +8,20 @@ import Portfolio from './components/Portfolio';
 import Team from './components/Team';
 import References from './components/References';
 import Contact from './components/Contact';
+import Testimonials from './components/Testimonials';
 import Footer from './components/essentials/Footer';
 
 const App = () => {
   return (
     <div>
       <Hero />
-      <Mission />
+      {/* <Mission /> */}
       <Services />
       <Values />
       <Portfolio />
       <Team />
       <References />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>

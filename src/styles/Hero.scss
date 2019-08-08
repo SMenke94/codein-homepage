@@ -98,7 +98,6 @@
   transform: translate(-50%, 0%) rotate(45deg);
   // animation: fade_move_down 2s ease-in-out infinite;
   @media only screen and (max-width: $mobile) {
-    bottom: 15%;
     width: 12px;
     height: 12px;
   }

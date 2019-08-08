@@ -1,0 +1,21 @@
+@import '../appearance/ColorPalette.scss';
+@import '../appearance/Breakpoints.scss';
+
+.testimonials-wrapper {
+  background-color: $beige;
+  width: 100vw;
+  min-height: 50vh;
+  padding-bottom: 3%;
+}
+
+.testimonials-headline {
+  color: $darkGrey;
+  font-size: 96px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+  @media only screen and (max-width: $tabletBig) {
+    padding: 24px 0;
+    font-size: 48px;
+  }
+}
