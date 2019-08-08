@@ -15,11 +15,15 @@ import rails from "../assets/images/stack/rails.png";
 import analytics from "../assets/images/stack/analytics.svg";
 import tag_manager from "../assets/images/stack/tag-manager.svg";
 import salesforce from "../assets/images/stack/salesforce.svg";
+import { useTranslation } from "react-i18next";
 
 const Team = () => {
-  let subHeadlineText = 'Hover over each profile for more info';
+
+  const { t } = useTranslation();
+
+  let subHeadlineText = t('team.hover');
   if (window.innerWidth < 1200) {
-    subHeadlineText = 'Click on each picture for more info';
+    subHeadlineText = t('team.click');
   }
 
   return (

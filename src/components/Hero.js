@@ -1,8 +1,10 @@
 import React from 'react';
 import '../styles/Hero.scss';
 import NavBar from './essentials/NavBar';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const {t} = useTranslation();
   return (
     <div className="hero-wrapper">
       <NavBar />
@@ -18,9 +20,9 @@ const Hero = () => {
         </div>
         <div className="hero-box">
           <div className="hero-headline">code&#183;in</div>
-          <div className="hero-sub-headline">more than IT</div>
+          <div className="hero-sub-headline">{t('hero.more_than_it')}</div>
           <div className="hero-slogan">
-            Your digital lab for impactful tech products
+            {t('hero.digital_lab')}
           </div>
         </div>
         <a href="#mission">

@@ -12,8 +12,10 @@ import nestle from '../assets/images/portfolio/nestle.png';
 import volders from '../assets/images/portfolio/volders.png';
 import hrmanager from '../assets/images/portfolio/hrmanager.png';
 import searchguard from '../assets/images/portfolio/searchguard.png';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+  const {t} = useTranslation();
   return (
     <div className="portfolio-wrapper" id="portfolio">
       <div className="portfolio-headline">Portfolio</div>
@@ -39,7 +41,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>Video platform (Web & iOS)</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.video_platform')}</p>
               </div>
               {/* <a href="https://live.archipinion.com" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -54,7 +56,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>Survey Results Dashboard</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.survey_results')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -69,7 +71,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>archipinion</p>
-                <p style={{ fontSize: '12px' }}>Automated SEO landing pages</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.seo_landingpages')}</p>
               </div>
               {/* <a href="https://video.archipinion.com/mehrgeschossig-in-massivholz" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -84,7 +86,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>codein</p>
-                <p style={{ fontSize: '12px' }}>Automated Invoice Checker</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.invoice_checker')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -99,7 +101,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>codein</p>
-                <p style={{ fontSize: '12px' }}>Gamification Sales Dashboards</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.sales_dashboard')}</p>
               </div>
               {/* <a href="https://www.salesdashboard.de/" target="_blank" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -114,7 +116,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Käuferportal</p>
-                <p style={{ fontSize: '12px' }}>internal recruiting platform</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.recruiting_platform')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -129,7 +131,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Searchguard</p>
-                <p style={{ fontSize: '12px' }}>SEO optimized landing page</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.seo_optimized')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -144,7 +146,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Codein</p>
-                <p style={{ fontSize: '12px' }}>Nestle Finder & Nutrition App</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.nestle_app')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
@@ -159,7 +161,7 @@ const Portfolio = () => {
             <div className="portfolio-box-info">
               <div className="portfolio-box-info-content">
                 <p style={{ fontWeight: 'bold' }}>Volders</p>
-                <p style={{ fontSize: '12px' }}>Subscription cancellation platform</p>
+                <p style={{ fontSize: '12px' }}>{t('portfolio.cancellation_platform')}</p>
               </div>
               {/* <a href="" className="portfolio-box-info-icon">
                 <i className="fas fa-external-link-alt" />
