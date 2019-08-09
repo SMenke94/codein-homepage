@@ -1,15 +1,9 @@
 import React from 'react';
 import '../styles/portfolio.scss';
-import archipinion_webapp from '../assets/images/portfolio/archipinion_webapp.png';
-import archipinion_ios from '../assets/images/portfolio/archipinion_ios.png';
 import archipinion_platform from '../assets/images/portfolio/archipinion_platform.png';
-import landingpages from '../assets/images/portfolio/landingpages.png';
-import archipinion_landing from '../assets/images/portfolio/archipinion_landing.png';
 import industry_dashboard from '../assets/images/portfolio/industry_dashboard.png';
 import invoice_checker from '../assets/images/portfolio/invoice_checker.png';
 import dashboard from '../assets/images/portfolio/dashboard1.png';
-import nestle from '../assets/images/portfolio/nestle.png';
-import volders from '../assets/images/portfolio/volders.png';
 import hrmanager from '../assets/images/portfolio/hrmanager.png';
 import searchguard from '../assets/images/portfolio/searchguard.png';
 import { useTranslation } from 'react-i18next';

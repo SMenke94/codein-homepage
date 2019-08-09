@@ -1,8 +1,5 @@
 import React from 'react';
 import "../styles/Values.scss";
-import star from '../assets/images/star.png';
-import heart from '../assets/images/heart.png';
-import rocket from '../assets/images/rocket.png';
 import { useTranslation } from 'react-i18next'
 
 const Values = () =>{
