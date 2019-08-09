@@ -18,7 +18,7 @@ const Values = () =>{
           <div className="values-boxes">
             <div className="values-box">
               <div className="values-box-icon">
-                <img src={star} alt="star" />
+                <i class="fas fa-heart"></i>
               </div>
               <div className="values-box-headline">{t('values.Excitement')}</div>
               <div className="values-box-text">
@@ -27,7 +27,7 @@ const Values = () =>{
             </div>
             <div className="values-box">
               <div className="values-box-icon">
-                <img src={heart} alt="heart" />
+                <i class="fas fa-hands-helping"></i>
               </div>
               <div className="values-box-headline">{t('values.Trust')}</div>
               <div className="values-box-text">
@@ -36,7 +36,7 @@ const Values = () =>{
             </div>
             <div className="values-box">
               <div className="values-box-icon">
-                <img src={rocket} alt="rocket" />
+                <i class="fas fa-chart-line"></i>
               </div>
               <div className="values-box-headline">{t('values.Growth')}</div>
               <div className="values-box-text">

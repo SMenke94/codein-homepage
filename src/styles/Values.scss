@@ -2,7 +2,7 @@
 @import '../appearance/Breakpoints.scss';
 
 .values-wrapper {
-  background-color: $lightGrey;
+  background-color: $offWhite;
 }
 
 .values-container {
@@ -20,7 +20,7 @@
 }
 
 .values-headline {
-  color: $lightTextGrey;
+  color: $textGrey;
   font-size: 96px;
   font-weight: 700;
   text-align: center;
@@ -32,14 +32,14 @@
 }
 
 .values-sub-headline {
-  color: $darkGrey;
+  color: $textGrey;
   font-size: 36px;
   line-height: 48px;
   margin-top: -16px;
   text-align: center;
   @media only screen and (min-width: $xxl) {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   @media only screen and (max-width: $tabletBig) {
     font-size: 24px;
@@ -81,6 +81,16 @@
   }
 }
 
+.values-box-icon {
+  font-size: 50px;
+  color: $pantone;
+  transition: all 0.3s ease;
+}
+
+.values-box:hover .values-box-icon {
+  color: $pantone;
+}
+
 .values-box-icon img {
   width: 50px;
 }
@@ -92,8 +102,16 @@
   line-height: 40px;
   letter-spacing: 1px;
   font-weight: bold;
-  width: 100%;
+  width: 20%;
   border-bottom: 1px solid $darkGrey;
+  transition: all 0.3s ease;
+}
+
+.values-box:hover .values-box-headline {
+  color: $pantone;
+  font-size: 17px;
+  width: 60%;
+  border-bottom: 1px solid $pantone;
 }
 
 .values-box-text {

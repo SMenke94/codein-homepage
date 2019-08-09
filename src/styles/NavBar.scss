@@ -1,11 +1,6 @@
 @import '../appearance/ColorPalette.scss';
 @import '../appearance/Breakpoints.scss';
 
-.navbar-wrapper {
-  height: 70px;
-  border: 2px solid red;
-}
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -26,7 +21,6 @@
 }
 
 .navbar-navbar-wrapper {
-  // width: 1180px;
   margin: 32px;
   display: flex;
   justify-content: space-between;
@@ -35,8 +29,9 @@
 }
 
 img.navbar-logo-style {
+  position: fixed;
+  z-index: 10;
   width: 40px;
-  margin-top: 32px;
   cursor: pointer;
   @media only screen and (max-width: $mobile) {
     width: 30px;
@@ -51,6 +46,7 @@ img.navbar-logo-style {
   color: $white;
   font-weight: bold;
   margin-bottom: 10px;
+  padding-right: 30px;
   &:hover, &:focus {
     // margin-bottom: 0px;
     color: $pantone;

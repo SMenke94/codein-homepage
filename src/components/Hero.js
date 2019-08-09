@@ -19,7 +19,7 @@ const Hero = () => {
           </svg>
         </div>
         <div className="hero-box">
-          <div className="hero-headline">code&#183;in</div>
+          <div className="hero-headline">code:in</div>
           <div className="hero-sub-headline">{t('hero.more_than_it')}</div>
           <div className="hero-slogan">
             {t('hero.digital_lab')}

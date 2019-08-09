@@ -2,11 +2,9 @@
 @import '../appearance/Breakpoints.scss';
 
 .contact-wrapper {
-  background-color: $white;
-  height: 100vh;
+  background-color: $beige;
   max-height: 1500px;
   min-height: 500px;
-  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,7 +42,7 @@
 
 .contact-box-headline {
   font-size: 24px;
-  color: $textGrey;
+  color: $darkGrey;
   font-weight: 700;
   text-align: center;
 }

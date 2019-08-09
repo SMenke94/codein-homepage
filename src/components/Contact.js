@@ -5,16 +5,16 @@ import { useTranslation, Trans } from 'react-i18next';
 const Contact = () => {
   const { t } = useTranslation();
   return (
-    <div className="cotact-wrapper" id="contact">
+    <div className="contact-wrapper" id="contact">
       <div className="row">
         <div className="contact-headline">
           <Trans i18nKey="contact.get_in_touch">Let's<div style={{ color: "#000", padding: "0 10px" }}>get in touch</div></Trans>
         </div>
         <div className="contact-headline">
-        <Trans i18nKey="contact.meet_up">Let's<div style={{ color: "#000", padding: "0 10px" }}>meet up</div></Trans>
+          <Trans i18nKey="contact.meet_up">Let's<div style={{ color: "#000", padding: "0 10px" }}>meet up</div></Trans>
         </div>
         <div className="contact-headline">
-        <Trans i18nKey="contact.build">Let's<div style={{ color: "#000", padding: "0 10px" }}>build</div></Trans>
+          <Trans i18nKey="contact.build">Let's<div style={{ color: "#000", padding: "0 10px" }}>build</div></Trans>
         </div>
         <a href="mailto:info@web-development.berlin">
           <div class="button">
@@ -42,7 +42,7 @@ const Contact = () => {
           <div className="contact-email">
             <div className="contact-box-headline">{t('contact.email')}</div>
             <div className="contact-box-text">
-              info@web-development.berlin
+              Sebastian.schlaak@web-development.berlin
             </div>
           </div>
         </div>

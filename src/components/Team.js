@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/team.scss";
 import tap_icon from '../assets/images/tap.png'
-import sebastian from "../assets/images/team/team-sebastian.png";
-import martin from "../assets/images/team/team-martin.png";
-import saskia from "../assets/images/team/team-saskia4.png";
-import katrin from "../assets/images/team/team-katrin-1.png";
-import robin from "../assets/images/team/team-robin.png";
-import jakob from "../assets/images/team/team-jakob.png";
-import marcus from "../assets/images/team/team-marcus-2.png";
-import max from "../assets/images/team/team-max.png";
+import sebastian from "../assets/images/team/sebastian.jpg";
+import martin from "../assets/images/team/martin.jpg";
+import saskia from "../assets/images/team/saskia.jpg";
+import katrin from "../assets/images/team/katrin.jpg";
+import robin from "../assets/images/team/robin.jpg";
+import jakob from "../assets/images/team/jakob.jpg";
+import marcus from "../assets/images/team/marcus.jpg";
+import max from "../assets/images/team/max.jpg";
 import eddie from "../assets/images/team/team-eddie.png";
+import cheffo from "../assets/images/team/cheffo.jpg";
 import ruby from "../assets/images/stack/ruby.png";
 import rails from "../assets/images/stack/rails.png";
 import analytics from "../assets/images/stack/analytics.svg";
@@ -29,17 +30,9 @@ const Team = () => {
   return (
     <div className="team-wrapper" id="team">
       <div className="row" id="team-row">
-        <div className="team-headline">Team</div>
-        <div className="team-sub-header-box">
+        <div className="team-headline">Who We Are</div>
+        {/* <div className="team-sub-header-box">
           <div className="team-sub-headline">{subHeadlineText}</div>
-          <img src={tap_icon} style={{ width: '18px' }} />
-        </div>
-        {/* <div className="team-description">
-          We all come from different professional backgrounds. Each bringing a unique set of skills to the team. 
-          Brought together by a shared passion for coding and building tech products - making us more than IT. 
-          <br/>
-          <br/>
-          Excited about all things React, Ruby, Rails, AWS and the opportunity to learn something new.
         </div> */}
         <div className="team-box">
           <div className="team-card">
@@ -89,7 +82,7 @@ const Team = () => {
                   Being curious never stops when you enjoy doing what you do and that simply creates energy.
               </div>
               </div>
-              <div className="team-card-additional">
+              {/* <div className="team-card-additional">
                 <div className="team-card-additional-info">
                   <div className="team-card-additional-info-title">
                     Entrepreneur
@@ -97,11 +90,8 @@ const Team = () => {
                   <div className="team-card-additional-info-title">
                     Founder
                 </div>
-                {/* <div className="team-card-additional-info-title">
-                    Stanford Leadership
-                </div> */}
                   <div className="team-card-additional-info-stack">
-                    {/* <i className="fab fa-html5" />
+                    <i className="fab fa-html5" />
                     <i className="fab fa-css3-alt" />
                     <i className="fab fa-sass" />
                     <i className="fab fa-js" />
@@ -110,12 +100,12 @@ const Team = () => {
                     <img src={rails} alt="" />
                     <i className="fab fa-node-js" />
                     <i className="fas fa-database" />
-                    <i className="fab fa-aws" /> */}
+                    <i className="fab fa-aws" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
-          </div>          
+          </div>
 
           <div className="team-card">
             <img src={robin} alt="" />
@@ -161,7 +151,6 @@ const Team = () => {
               <div className="team-card-name">Saskia Menke</div>
               <div className="team-card-title">Data Gymnast</div>
               <div className="team-card-general-bio">
-                {/* Cartwheeling between food, impact finance and data analytics by flipping code. */}
                 Cartwheeling through life while flipping code, structuring
                 data and appreciating food.
               </div>
@@ -200,10 +189,9 @@ const Team = () => {
             <img src={katrin} alt="" />
             <div className="team-card-general">
               <div className="team-card-name">Katrin Abel</div>
-              <div className="team-card-title">Marketing Machine</div>
+              <div className="team-card-title">Fullstack Foodie</div>
               <div className="team-card-general-bio">
-                Great things never come from comfort zones so push yourself,
-                because no one else is going to do it for you.
+                Passionate about user centric-coding and analytics (and anything related to chocolate).
               </div>
             </div>
             <div className="team-card-additional">
@@ -376,6 +364,36 @@ const Team = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="team-card">
+            <img src={cheffo} alt="" />
+            <div className="team-card-general">
+              <div className="team-card-name">Cheffo</div>
+              <div className="team-card-title">Feelgood Manager</div>
+              <div className="team-card-general-bio">
+                Barking, barking, barking, barking, barking, barking, barking, barking, barking.
+              </div>
+            </div>
+            {/* <div className="team-card-additional">
+              <div className="team-card-additional-info">
+                <div className="team-card-additional-info-title">
+                  BSc Computer Sciences
+                </div>
+                <div className="team-card-additional-info-stack">
+                  <i className="fas fa-database" />
+                  <img src={ruby} alt="" />
+                  <img src={rails} alt="" />
+                  <i className="fab fa-js" />
+                  <i className="fab fa-react" />
+                  <i className="fab fa-html5" />
+                  <i className="fab fa-css3-alt" />
+                  <i className="fab fa-sass" />
+                  <i className="fab fa-node-js" />
+                  <i className="fab fa-aws" />
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>
