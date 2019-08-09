@@ -8,12 +8,14 @@ import searchguard from "../assets/images/clients/client-5.png";
 import jager from "../assets/images/clients/client-6.png";
 import schuco from "../assets/images/clients/client-7.png";
 import agripinion from "../assets/images/clients/client-8.png";
+import { useTranslation } from "react-i18next";
 
 const References = () => {
+  const { t } = useTranslation();
   return (
     <div className="references-wrapper" id="references">
       <div className="row" id="references-row">
-        <div className="references-headline">Who Trusts Us</div>
+        <div className="references-headline">{t('references')}</div>
         <div className="references-image-wrapper">
           <img src={archipinion} alt="logo" />
           <img src={volders} alt="logo" />

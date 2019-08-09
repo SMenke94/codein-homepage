@@ -12,25 +12,13 @@ import nestle from '../assets/images/portfolio/nestle.png';
 import volders from '../assets/images/portfolio/volders.png';
 import hrmanager from '../assets/images/portfolio/hrmanager.png';
 import searchguard from '../assets/images/portfolio/searchguard.png';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+  const {t} = useTranslation();
   return (
     <div className="portfolio-wrapper" id="portfolio">
       <div className="portfolio-headline">What We Build</div>
-      {/* <div className="portfolio-sub-headline">
-        All App Web
-      </div> */}
-
-      {/* <div className="row">
-        <div className="col-lg-12">
-          <ul className="portfolio-filter">
-            <li data-filter="*" className="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
-      </div> */}
-
 
       <div className="portfolio-boxes">
         <div className="portfolio-box darkBlue filter-web">
@@ -38,7 +26,7 @@ const Portfolio = () => {
             <img src={archipinion_platform} alt="archipinion_platform" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>archipinion</p>
-              <p style={{ fontSize: '12px' }}>Video platform (Web & iOS)</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.video_platform')}</p>
             </div>
           </div>
         </div>
@@ -48,7 +36,7 @@ const Portfolio = () => {
             <img src={industry_dashboard} alt="industry_dashboard" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>archipinion</p>
-              <p style={{ fontSize: '12px' }}>Survey Results Dashboard</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.survey_results')}</p>
             </div>
           </div>
         </div>
@@ -58,7 +46,7 @@ const Portfolio = () => {
             <img src={dashboard} alt="dashboard" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>codein</p>
-              <p style={{ fontSize: '12px' }}>Gamification Sales Dashboards</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.sales_dashboard')}</p>
             </div>
           </div>
         </div>
@@ -68,7 +56,7 @@ const Portfolio = () => {
             <img src={searchguard} alt="searchguard" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>Searchguard</p>
-              <p style={{ fontSize: '12px' }}>SEO optimized landing page</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.seo_optimized')}</p>
             </div>
           </div>
         </div>
@@ -78,7 +66,7 @@ const Portfolio = () => {
             <img src={invoice_checker} alt="invoice_checker" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>codein</p>
-              <p style={{ fontSize: '12px' }}>Automated Invoice Checker</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.invoice_checker')}</p>
             </div>
           </div>
         </div>
@@ -88,40 +76,10 @@ const Portfolio = () => {
             <img src={hrmanager} alt="hrmanager" />
             <div className="portfolio-box-info-content">
               <p style={{ fontWeight: 'bold' }}>Käuferportal</p>
-              <p style={{ fontSize: '12px' }}>internal recruiting platform</p>
+              <p style={{ fontSize: '12px' }}>{t('portfolio.recruiting_platform')}</p>
             </div>
           </div>
         </div>
-
-        {/* <div className="portfolio-box lightGrey filter-web">
-          <div className="portfolio-box-image">
-            <img src={archipinion_landing} alt="archipinion_landing" />
-            <div className="portfolio-box-info-content">
-              <p style={{ fontWeight: 'bold' }}>archipinion</p>
-              <p style={{ fontSize: '12px' }}>Automated SEO landing pages</p>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="portfolio-box pantone filter-app">
-          <div className="portfolio-box-image">
-            <img src={nestle} alt="nestle" />
-            <div className="portfolio-box-info-content">
-              <p style={{ fontWeight: 'bold' }}>Codein</p>
-              <p style={{ fontSize: '12px' }}>Nestle Finder & Nutrition App</p>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="portfolio-box lightGrey filter-web">
-          <div className="portfolio-box-image">
-            <img src={volders} alt="volders" />
-            <div className="portfolio-box-info-content">
-              <p style={{ fontWeight: 'bold' }}>Volders</p>
-              <p style={{ fontSize: '12px' }}>Subscription cancellation platform</p>
-            </div>
-          </div>
-        </div> */}
 
       </div>
     </div>

@@ -1,0 +1,70 @@
+{
+    "hero": {
+      "more_than_it": "more than IT",
+      "digital_lab": "Your digital lab for impactful tech products"},
+    "mission": {
+      "line1": "We help you digitalize your ventures and products.",
+      "line2": "With ease, on time, no pain."},
+    "services": {
+      "what": "What We Do",
+      "principle": "We believe in the <1>lean startup principle</1> that everything we build should be of value for the user. Therefore our work does not start with the question ’Can we build it?’ but rather with ‘Should webuild it?’. We want the <1>best possible product for you and your users.</1> ",
+      "more_than_it":"This is why we are more than IT.",
+      "Consulting":"Consulting",
+      "Agile Methods": "Agile Methods",
+      "Design Thinking": "Design Thinking",
+      "Concept":"Concept",
+      "Product Development":"Product Development",
+      "MVP Testing":"MVP Testing",
+      "Development":"Development",
+      "Web & Mobile": "Web & Mobile",
+      "Fullstack Software Development": "Fullstack Software Development",
+      "Tracking & Analytics": "Tracking und Analytics",
+      "Salesforce": "Salesforce",
+      "Tech Stack": "Tech Stack",
+      "Database": "Database",
+      "Infrastructure":"Infrastructure"},
+    "values":{
+      "what": "What We Stand For",
+      "build_happiness": "Learn and grow as a team. Create impactful products. Build happiness.",
+      "Excitement": "Excitement",
+      "Excitement_text": "We love coding and aspire to build extraordinary products that excite us and have an impact to the world.",
+      "Trust": "Trust",
+      "Trust_text": "For us the foundation of successful teamwork and collaboration is trust based on honest and transparent communication.",
+      "Growth": "Grwoth",
+      "Growth_text": "We strive for more – personal and professional growth is an essential part of our everyday work."},
+    "portfolio":{
+      "video_platform": "Video platform (Web & iOS)",
+      "survey_results": "Survey Results Dashboard",
+      "seo_landingpages": "Automated SEO landing pages",
+      "invoice_checker": "Automated Invoice Checker",
+      "sales_dashboard": "Gamification Sales Dashboards",
+      "recruiting_platform": "internal recruiting platform",
+      "seo_optimized": "SEO optimized landing page",
+      "nestle_app": "Nestle Finder & Nutrition App",
+      "cancellation_platform": "Subscription cancellation platform"},
+    "team": {
+      "Hover over each profile for more info": "Hover over each profile for more info",
+      "Click on each picture for more info": "Click on each picture for more info"},
+    "references": "References",
+    "contact": {
+      "get_in_touch": "Let's <1>get in touch</1>",
+      "meet_up": "Let's <1>meet up</1>",
+      "build": "Let's <1>build</1>",
+      "say_hi": "Say Hi",
+      "office": "Office",
+      "Germany": "Germany",
+      "phone": "phone",
+      "email": "Email"},
+    "footer": {
+      "your_adress":"Your destination for impactful tech products.",
+      "impressum": "impressum"},
+    "navbar": {
+      "mission":"mission",
+      "values": "values",
+      "services": "services",
+      "portfolio": "portfolio",
+      "team": "team",
+      "references":"references",
+      "contact":"contact"
+    }
+  }
