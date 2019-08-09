@@ -91,11 +91,12 @@ class Services extends Component {
   }
 
   render() {
+    // const { t } = useTranslation();
     return (
       <div className="services-wrapper" id="services">
         <div className="row">
           <div className="services-container">
-            <div className="services-headline">{t('services.what')}</div>
+            <div className="services-headline">What We Build</div>
             <div className="services-sub-headline">
               <Trans i18nKey="services.more_than_it">Ob ganzheitliche Betreuung oder punktuelle Unterstützung – <br />wir sind immer mit Herzblut dabei.</Trans>
             </div>
@@ -107,7 +108,7 @@ class Services extends Component {
                     <i class="far fa-comments"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">{t('services.Consulting')}</div>
+                    <div className="service-box-headline">Consulting</div>
                     <div className="service-box-sub-headline">We help you to identify the digital needs of your customers.</div>
                   </div>
                 </div>
@@ -127,7 +128,7 @@ class Services extends Component {
                     <i class="far fa-lightbulb"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">{t('services.Concept')}</div>
+                    <div className="service-box-headline">Concept</div>
                     <div className="service-box-sub-headline">We support you along the product development journey.</div>
                   </div>
                 </div>
@@ -148,7 +149,7 @@ class Services extends Component {
                     <i class="fas fa-tools"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">{t('services.Development')}</div>
+                    <div className="service-box-headline">Development</div>
                     <div className="service-box-sub-headline">We build the entire product - from A to Z.</div>
                   </div>
                 </div>
@@ -168,7 +169,7 @@ class Services extends Component {
                     <i class="fas fa-code"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">{t('services.Tech Stack')}</div>
+                    <div className="service-box-headline">Tech Stack</div>
                     <div className="service-box-sub-headline">We work with the latest technologies.</div>
                   </div>
                 </div>
@@ -178,8 +179,8 @@ class Services extends Component {
                 <div className="service-box-additional" style={this.state.infoStyle4}>
                   <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Frontend:</strong> React (Native), HTML, CSS, JS</div>
                   <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Backend:</strong> Ruby, Ruby on Rails, Node.js</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>{t('services.Database')}:</strong> MySQL, PostgreSQL</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>{t('services.Infrastructure')}:</strong> AWS, Heroku</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Database:</strong> MySQL, PostgreSQL</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Infrastructure:</strong> AWS, Heroku</div>
                 </div>
               </div>
 
