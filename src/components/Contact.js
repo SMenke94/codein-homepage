@@ -8,15 +8,15 @@ const Contact = () => {
     <div className="contact-wrapper" id="contact">
       <div className="row">
         <div className="contact-headline">
-          <Trans i18nKey="contact.get_in_touch">Let's<div style={{ color: "#000", padding: "0 10px" }}>get in touch</div></Trans>
+          <Trans i18nKey="contact.get_in_touch"></Trans>
         </div>
         <div className="contact-headline">
-          <Trans i18nKey="contact.meet_up">Let's<div style={{ color: "#000", padding: "0 10px" }}>meet up</div></Trans>
+          <Trans i18nKey="contact.meet_up"></Trans>
         </div>
         <div className="contact-headline">
-          <Trans i18nKey="contact.build">Let's<div style={{ color: "#000", padding: "0 10px" }}>build</div></Trans>
+          <Trans i18nKey="contact.build"></Trans>
         </div>
-        <a href="mailto:info@web-development.berlin">
+        <a href="mailto:sebastian@codein.berlin">
           <div class="button">
             <span>{t('contact.say_hi')}</span>
             <svg>
@@ -26,23 +26,24 @@ const Contact = () => {
           </div>
         </a>
         <div className="contact-info-box">
-          <div className="contact-address">
+          <div className="contact-info-box-element contact-address">
             <div className="contact-box-headline">{t('contact.office')}</div>
             <div className="contact-box-text">
-              <p>Adrilina UG (haftungsbeschränkt)</p>
+              <p>Adrilina UG</p>
+              <p>(haftungsbeschränkt)</p>
               <p>Elchdamm 74</p>
               <p>13503 Berlin</p>
               <p>Germany</p>
             </div>
           </div>
-          <div className="contact-phone">
+          <div className="contact-info-box-element contact-phone">
             <div className="contact-box-headline">{t('contact.phone')}</div>
             <div className="contact-box-text">+49 173 677 27 81</div>
           </div>
-          <div className="contact-email">
+          <div className="contact-info-box-element contact-email">
             <div className="contact-box-headline">{t('contact.email')}</div>
             <div className="contact-box-text">
-              Sebastian.schlaak@web-development.berlin
+              sebastian@codein.berlin
             </div>
           </div>
         </div>

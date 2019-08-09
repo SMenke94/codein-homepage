@@ -11,21 +11,24 @@
 }
 
 .contact-headline {
-  color: $lightGrey;
+  color: $darkGrey;
   display: flex;
-  font-size: 96px;
+  font-size: 58px;
   font-weight: 700;
   text-align: left;
   line-height: 1em;
+  margin: 10px 0px;
   &:first-child {
     padding-top: 50px;
   }
   @media only screen and (max-width: $tabletBig) {
     padding-top: 24px;
-    font-size: 72px;
+    font-size: 36px;
+    margin: 5px 0px;
   }
   @media only screen and (max-width: $mobile) {
-    font-size: 36px;
+    font-size: 24px;
+    margin: 0px;
   }
 }
 
@@ -38,6 +41,10 @@
     align-items: center;
     flex-direction: column;
   }
+}
+
+.contact-info-box-element {
+  margin: 10px;
 }
 
 .contact-box-headline {
@@ -54,7 +61,7 @@
 }
 
 .button {
-  margin: 120px 0;
+  margin: 100px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,7 +69,7 @@
 	cursor: pointer;
 	svg {
 		height: 55px;
-		width: 150px;
+    width: 150px;
 		fill: none;
 		stroke-width: 5;
 		.o1 {
@@ -79,7 +86,7 @@
 	}
 	span {
 		position: absolute;
-		margin: auto 0;
+    margin: auto 0;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 	}

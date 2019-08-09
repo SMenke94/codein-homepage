@@ -51,7 +51,7 @@ export default class NavBar extends Component {
         height: '36px'
       }
     };
-    
+
     if(window.innerWidth < 640){
       style.icon = {width: '20px', height:'20px'}
     }
@@ -95,25 +95,18 @@ export default class NavBar extends Component {
                       />
                     </div>
                     <a
-                      href="#mission"
-                      className="navbar-nav-link"
-                      activeStyle={style.active}
-                    >
-                      <Trans>navbar.mission</Trans>
-                    </a>
-                    <a
                       href="#services"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      <Trans>navbar.values</Trans>
+                      <Trans>navbar.services</Trans>
                     </a>
                     <a
                       href="#values"
                       className="navbar-nav-link"
                       activeStyle={style.active}
                     >
-                      <Trans>navbar.services</Trans>
+                      <Trans>navbar.values</Trans>
                     </a>
                     <a
                       href="#portfolio"

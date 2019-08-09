@@ -18,7 +18,7 @@ const Portfolio = () => {
   const {t} = useTranslation();
   return (
     <div className="portfolio-wrapper" id="portfolio">
-      <div className="portfolio-headline">What We Build</div>
+      <div className="portfolio-headline">{t('portfolio.what')}</div>
 
       <div className="portfolio-boxes">
         <div className="portfolio-box darkBlue filter-web">

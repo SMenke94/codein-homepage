@@ -25,7 +25,7 @@ const Hero = () => {
             {t('hero.digital_lab')}
           </div>
         </div>
-        <a href="#mission">
+        <a href="#services">
           <div className="hero-scroll-arrow bounce"></div>
         </a>
       </div>

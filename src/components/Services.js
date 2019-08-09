@@ -1,9 +1,9 @@
 
 import React, { Component } from "react";
 import "../styles/Services.scss";
-import { useTranslation, Trans } from "react-i18next";
+import { withTranslation, Trans } from "react-i18next";
 
-class Services extends Component {
+class ServicesComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,6 +25,11 @@ class Services extends Component {
       infoStyle4: { display: 'none' }
     };
   }
+
+  // componentDidMount() {
+  //   document.getElementById('i18n-de').addEventListener('click', this.moreInfoToggle1())
+  //   document.getElementById('i18n-en').addEventListener('click', this.moreInfoToggle1())
+  // }
 
   moreInfoToggle1 = () => {
     if (!this.state.active1) {
@@ -91,14 +96,15 @@ class Services extends Component {
   }
 
   render() {
-    // const { t } = useTranslation();
     return (
       <div className="services-wrapper" id="services">
         <div className="row">
           <div className="services-container">
-            <div className="services-headline">What We Build</div>
+            <div className="services-headline">
+              <Trans i18nKey="services.what"></Trans>
+            </div>
             <div className="services-sub-headline">
-              <Trans i18nKey="services.more_than_it">Ob ganzheitliche Betreuung oder punktuelle Unterstützung – <br />wir sind immer mit Herzblut dabei.</Trans>
+              <Trans i18nKey="services.more_than_it"></Trans>
             </div>
 
             <div className="services-boxes">
@@ -108,17 +114,17 @@ class Services extends Component {
                     <i class="far fa-comments"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">Consulting</div>
-                    <div className="service-box-sub-headline">We help you to identify the digital needs of your customers.</div>
+                    <div className="service-box-headline"><Trans i18nKey="services.consulting"></Trans></div>
+                    <div className="service-box-sub-headline"><Trans i18nKey="services.consulting_info"></Trans></div>
                   </div>
                 </div>
                 <div onClick={this.moreInfoToggle1} className="service-box-link" style={this.state.linkStyle1}>
                   <i class="far fa-arrow-alt-circle-down"></i>
                 </div>
                 <div className="service-box-additional" style={this.state.infoStyle1}>
-                  <div><strong style={{color: "#FF6F61"}}>#</strong> Analyse des Ist-Zustands</div>
-                  <div><strong style={{color: "#FF6F61"}}>#</strong> Identifizierung der Kundenbedürfnisse</div>
-                  <div><strong style={{color: "#FF6F61"}}>#</strong> Entwicklung zielgerichteter Lösungsansätze</div>
+                  <div><strong style={{color: "#FF6F61"}}>#</strong><Trans i18nKey="services.consulting1"></Trans></div>
+                  <div><strong style={{color: "#FF6F61"}}>#</strong><Trans i18nKey="services.consulting2"></Trans></div>
+                  <div><strong style={{color: "#FF6F61"}}>#</strong><Trans i18nKey="services.consulting3"></Trans></div>
                 </div>
               </div>
 
@@ -128,18 +134,18 @@ class Services extends Component {
                     <i class="far fa-lightbulb"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">Concept</div>
-                    <div className="service-box-sub-headline">We support you along the product development journey.</div>
+                    <div className="service-box-headline"><Trans i18nKey="services.concept"></Trans></div>
+                    <div className="service-box-sub-headline"><Trans i18nKey="services.concept_info"></Trans></div>
                   </div>
                 </div>
                 <div onClick={this.moreInfoToggle2} className="service-box-link" style={this.state.linkStyle2}>
                   <i class="far fa-arrow-alt-circle-down"></i>
                 </div>
                 <div className="service-box-additional" style={this.state.infoStyle2}>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Ausarbeitung des Konzepts </div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Erstellen eines Prototypens</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Testphase an der Zielgruppe</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Validierung des Lösungsansatzes</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.concept1"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.concept2"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.concept3"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.concept4"></Trans></div>
                 </div>
               </div>
 
@@ -149,17 +155,18 @@ class Services extends Component {
                     <i class="fas fa-tools"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">Development</div>
-                    <div className="service-box-sub-headline">We build the entire product - from A to Z.</div>
+                    <div className="service-box-headline"><Trans i18nKey="services.development"></Trans></div>
+                    <div className="service-box-sub-headline"><Trans i18nKey="services.development_info"></Trans></div>
                   </div>
                 </div>
                 <div onClick={this.moreInfoToggle3} className="service-box-link" style={this.state.linkStyle3}>
                   <i class="far fa-arrow-alt-circle-down"></i>
                 </div>
                 <div className="service-box-additional" style={this.state.infoStyle3}>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Web oder Mobil-basierte Realisation</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Full-Stack Software Entwicklung (Frontend, Backend, Datenbanken, Infrastruktur)</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> Tracking & Analytics</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.development1"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.development2"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.development3"></Trans></div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong><Trans i18nKey="services.development4"></Trans></div>
                 </div>
               </div>
 
@@ -169,8 +176,8 @@ class Services extends Component {
                     <i class="fas fa-code"></i>
                   </div>
                   <div className="service-box-header">
-                    <div className="service-box-headline">Tech Stack</div>
-                    <div className="service-box-sub-headline">We work with the latest technologies.</div>
+                    <div className="service-box-headline"><Trans i18nKey="services.tech_stack"></Trans></div>
+                    <div className="service-box-sub-headline"><Trans i18nKey="services.tech_stack_info"></Trans></div>
                   </div>
                 </div>
                 <div onClick={this.moreInfoToggle4} className="service-box-link" style={this.state.linkStyle4}>
@@ -179,8 +186,8 @@ class Services extends Component {
                 <div className="service-box-additional" style={this.state.infoStyle4}>
                   <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Frontend:</strong> React (Native), HTML, CSS, JS</div>
                   <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Backend:</strong> Ruby, Ruby on Rails, Node.js</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Database:</strong> MySQL, PostgreSQL</div>
-                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong>Infrastructure:</strong> AWS, Heroku</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong><Trans i18nKey="services.tech_stack1"></Trans>:</strong> MySQL, PostgreSQL</div>
+                  <div><strong style={{ color: "#FF6F61" }}>#</strong> <strong><Trans i18nKey="services.tech_stack2"></Trans>:</strong> AWS, Heroku</div>
                 </div>
               </div>
 
@@ -192,4 +199,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export const Services = withTranslation()(ServicesComponent);
