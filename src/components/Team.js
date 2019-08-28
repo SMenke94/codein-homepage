@@ -8,7 +8,7 @@ import robin from "../assets/images/team/robin.jpg";
 import jakob from "../assets/images/team/jakob.jpg";
 import marcus from "../assets/images/team/marcus.jpg";
 import max from "../assets/images/team/max.jpg";
-import eddie from "../assets/images/team/eddie.png";
+import eddie from "../assets/images/team/eddie.jpg";
 import cheffo from "../assets/images/team/cheffo.jpg";
 import ruby from "../assets/images/stack/ruby.png";
 import rails from "../assets/images/stack/rails.png";
